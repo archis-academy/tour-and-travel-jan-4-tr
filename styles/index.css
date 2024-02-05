@@ -21,7 +21,7 @@
   position: relative;
   margin-top: 200px;
   margin-bottom: 250px;
-  width: 1400px;
+  min-width: 1400px;
 }
 
 .europe-ss-subline {
