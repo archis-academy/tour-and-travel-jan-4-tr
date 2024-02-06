@@ -11,3 +11,93 @@
     opacity:0.4;
     filter: grayscale(100);
 }
+
+.homepage-favorite-resort-contanier{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    
+
+}
+
+.favorite-resort-box{
+
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 250px;
+    max-width: 1370px;
+    display: flex;
+}
+
+
+
+
+.resort-subline{
+
+
+    margin-bottom: 20px;
+    color: orangered;
+    font-size:20px;
+
+
+
+
+}
+
+.resort-headline{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #000050;
+    margin-bottom: 20px;
+    
+}
+
+.card-box{
+
+    display: flex;
+    padding-top: 23px;
+
+
+
+}
+
+.resort-prg{
+    
+    padding-left: 15px;
+    font-size: 19px;
+
+
+
+}
+
+.resort-subtitle{
+
+    color: #808080;
+
+
+}
+
+.resort-text{
+
+    display: flex;
+    color: #808080;
+    line-break: break-word;
+    
+
+
+}
+.value-img{
+
+    padding-bottom: 20px;
+
+
+}
+.trip-img{
+
+
+}
+
