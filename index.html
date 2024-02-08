@@ -6,14 +6,127 @@
     <title>Tour and Travel</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/shared.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Volkhov"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
+
   <body>
+    <div class="homepage-hero-section-container">
+      <div class="homepage-hero-section-box">
+        <header class="hero-section-header">
+          <img
+            class="hero-section-travel-logo"
+            src="/images/logo.png"
+            alt="travel-logo"
+          />
+          <div class="hero-section-nav">
+            <a href="#">Home</a>
+            <img
+              class="hero-section-active-indicator"
+              src="images/Active-indicator.png"
+              alt=""
+            />
+            <a href="#">About</a>
+            <div class="hs-nav-dropdown">
+              <a href="#">Services</a>
+              <i class="fa fa-caret-down"></i>
+              <img
+                class="hs-nav-dropdown-img"
+                src="images/popup-cloud.png"
+                alt=""
+              />
+              <div class="hs-nav-dropdown-text">
+                <a href="#">Honeymoon Packages</a>
+                <a href="#">Tours Packages</a>
+                <a href="#">Musical Events</a>
+                <a href="#">Build Package</a>
+              </div>
+            </div>
+            <a href="#">Upcomming Packages</a>
+          </div>
+          <button class="hs-getintouch-button">Get in Touch</button>
+        </header>
+        <div class="hero-section-contents">
+          <img src="/images/Vector-1.png" alt="vector" />
+          <h1>No matter where you're going to, we'll take you there</h1>
+          <form class="hs-travel-form">
+            <input
+              class="hs-form-datalist"
+              list="hs-form-datalist"
+              placeholder="Where to?"
+            />
+            <datalist id="hs-form-datalist">
+              <option value="United States">United States</option>
+              <option value="Germany">Germany</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Spain">Spain</option>
+              <option value="Italy">Italy</option>
+              <option value="Turkey">Turkey</option>
+            </datalist>
+            <img src="images/line.png" alt="line" />
+            <select class="hs-form-selections">
+              <option value="--">Travel Type</option>
+              <option value="plane">By Plane</option>
+              <option value="car">By Car</option>
+              <option value="ship">By Ship</option>
+            </select>
+            <i
+              style="font-size: 30px; position: relative; left: -30px"
+              class="fa fa-angle-down"
+            ></i>
+            <img src="images/line.png" alt="line" />
+            <select class="hs-form-selections">
+              <option value="--">Duration</option>
+              <option value="one day">1 Day</option>
+              <option value="one week">1 week</option>
+              <option value="one month">1 month</option>
+            </select>
+            <i
+              style="font-size: 30px; position: relative; left: -45px"
+              class="fa fa-angle-down"
+            ></i>
+            <input
+              style="cursor: pointer"
+              class="hs-submit-input"
+              type="submit"
+              value="Submit"
+            />
+          </form>
+          <div class="hs-client-images-section">
+            <div class="hs-client-images">
+              <img src="images/user-avatar2.png" alt="user-image" />
+              <img src="images/user-avatar3.png" alt="user-image" />
+              <img src="images/user-avatar4.png" alt="user-image" />
+              <img src="images/user-avatar1.png" alt="user-image" />
+              <img src="images/user-avatar5.png" alt="user-image" />
+              <img src="images/user-avatar6.png" alt="user-image" />
+              <img src="images/user-avatar-emty.png" alt="user-image" />
+              <span class="hs-client-plus">+</span>
+            </div>
+            <span>2,500 people booked Tomorrowland Event in last 24 hours</span>
+          </div>
+        </div>
+      </div>
+      <img class="hs-scroll-img" src="images/scroll.png" alt="" />
+      <img class="hs-pageline-img" src="images/page-line.png" alt="" />
+    </div>
+
     <div class="partners-section">
-      <img class="partners-logo-img" src="images/partner-logo3.png" >
-      <img class="partners-logo-img" src="images/partners-logo5.png" >
-      <img class="partners-logo-img" src="images/partner-logo4.png" >
-      <img class="partners-logo-img" src="images/partner-logo1.png" >
-      <img class="partners-logo-img" src="images/partner-logo2.png" >
+      <img class="partners-logo-img" src="images/partner-logo3.png" />
+      <img class="partners-logo-img" src="images/partners-logo5.png" />
+      <img class="partners-logo-img" src="images/partner-logo4.png" />
+      <img class="partners-logo-img" src="images/partner-logo1.png" />
+      <img class="partners-logo-img" src="images/partner-logo2.png" />
     </div>
   </body>
 </html>
