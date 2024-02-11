@@ -7,10 +7,10 @@
 .homepage-hero-section-container {
   background-image: url(/images/homepage-background.png);
   background-size: cover;
+  background-position: center;
   position: relative;
   display: flex;
   justify-content: center;
-  min-height: 978px;
   overflow: hidden;
 }
 
@@ -18,12 +18,13 @@
   margin-top: 80px;
   font-family: "Poppins", sans-serif;
   color: white;
+  max-width: 1350px;
 }
 
 .hero-section-header {
   display: flex;
-  justify-content: space-between;
-  font-size: 17px;
+  gap: 150px;
+  font-size: 19px;
 }
 
 .hs-getintouch-button {
@@ -33,21 +34,19 @@
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   color: white;
-  padding: 0 20px;
-  margin-top: -10px;
-  margin-bottom: 20px;
+  padding: 0 30px;
   cursor: pointer;
 }
 
 .hero-section-nav {
   display: flex;
-  gap: 30px;
-  padding-top: 5px;
+  gap: 35px;
+  padding: 15px 50px;
 }
 
 .hero-section-active-indicator {
   position: absolute;
-  margin: 25px 0 0 10px;
+  margin: 30px 0 0 15px;
 }
 
 .hs-nav-dropdown-text {
@@ -68,12 +67,12 @@
   display: block;
   position: relative;
   margin-top: 15px;
-  left: 5px;
   top: 25px;
   z-index: 2;
 }
 
-.hs-nav-dropdown-text a:active {
+.hs-nav-dropdown-text a:active,
+.hs-nav-dropdown a:hover {
   color: rgba(132, 132, 132, 0.84);
 }
 
@@ -84,12 +83,13 @@
 
 .hero-section-contents {
   margin-top: 150px;
+  max-width: 800px;
 }
 
 .hero-section-contents h1 {
-  width: 630px;
+  max-width: 630px;
   font-size: 58px;
-  line-height: 67.91px;
+  line-height: 67px;
   margin-bottom: 30px;
 }
 
@@ -99,14 +99,14 @@
   align-items: center;
   background-color: #f3f3f395;
   backdrop-filter: blur(8px);
-  width: 1000px;
-  height: 100px;
+  padding: 30px 0;
   border-radius: 5px;
 }
 
 .hs-form-datalist {
   all: unset;
   width: 150px;
+  padding-left: 40px;
 }
 
 .hs-form-datalist::placeholder {
@@ -123,6 +123,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: white;
+  padding: 5px;
 }
 
 .hs-form-selections:focus,
@@ -135,7 +136,6 @@
   border-radius: 10px;
   background-color: #df6951;
   padding: 10px 40px;
-  margin-left: -70px;
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -144,6 +144,7 @@
 .hs-client-images-section {
   display: flex;
   margin-top: 30px;
+  margin-bottom: 300px;
 }
 
 .hs-client-images img:not(:first-child) {
@@ -163,12 +164,13 @@
 
 .hs-scroll-img {
   position: absolute;
-  bottom: -210px;
+  bottom: -20%;
   left: 20px;
 }
 
 .hs-pageline-img {
   position: absolute;
+  height: 3px;
   bottom: 50px;
 }
 
