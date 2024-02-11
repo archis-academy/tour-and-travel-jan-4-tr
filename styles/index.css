@@ -19,38 +19,36 @@
 
 .europe-sightseeing-tours-box {
   position: relative;
-  margin-top: 200px;
-  margin-bottom: 250px;
-  min-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px 0 250px 200px;
 }
 
 .europe-ss-subline {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #df6951;
   text-transform: uppercase;
 }
 
 .europe-ss-headline {
   font-family: "Volkhov", serif;
-  font-size: 50px;
+  font-size: 35px;
   color: #181e4b;
   text-transform: capitalize;
-  max-width: 700px;
 }
 
 .europe-ss-paragraph {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: initial;
-  margin: 18px 0 30px;
-  max-width: 570px;
+  margin: 20px 0 30px;
 }
 
 .europe-ss-button {
   color: white;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 25px;
   padding: 5px 20px 20px 5px;
   background-color: #df6951;
@@ -62,9 +60,8 @@
 
 .europe-ss-imgs-section {
   display: flex;
-  gap: 50px;
-  margin: 75px 0 0;
-  max-width: 1100px;
+  margin-top: 60px;
+  gap: 40px;
 }
 
 .europe-ss-img-boxes {
@@ -73,8 +70,8 @@
 }
 
 .europe-ss-imgs {
-  height: 230px;
-  max-width: 230px;
+  height: 200px;
+  max-width: 200px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -83,7 +80,7 @@
   position: absolute;
   color: white;
   background-color: #df6951;
-  padding: 10px 20px;
+  padding: 5px 20px;
   right: 15px;
   top: 15px;
   border-radius: 45px;
@@ -91,26 +88,8 @@
 
 .europe-ss-eiffel-img {
   position: absolute;
+  scale: 0.8;
   z-index: -1;
-  right: 0;
-  top: 52px;
-}
-
-.europe-ss-eiffel-background {
-  position: absolute;
-  z-index: -2;
-  right: 5px;
-  top: 30px;
-}
-
-.europe-ss-eiffel-text {
-  position: absolute;
-  transform: rotate(-90deg);
-  font-family: "Poppins", sans-serif;
-  text-transform: capitalize;
-  opacity: 0.1;
-  font-size: 50px;
-  font-weight: 700;
-  right: -7.2cm;
-  bottom: 125px;
+  right: 50px;
+  top: -10px;
 }
