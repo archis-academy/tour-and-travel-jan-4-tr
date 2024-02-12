@@ -11,3 +11,21 @@
     opacity:0.4;
     filter: grayscale(100);
 }
+
+.image-container {
+    position: relative;
+  }
+  
+  .image-caption {
+    position: absolute;
+    bottom: 60px;
+    left: 250px;
+    color: rgb(250, 249, 249);
+    padding: 60px;
+  }
+  p {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  
