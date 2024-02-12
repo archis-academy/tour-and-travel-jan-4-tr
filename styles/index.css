@@ -44,11 +44,6 @@
   padding: 15px 50px;
 }
 
-.hero-section-active-indicator {
-  position: absolute;
-  margin: 30px 0 0 15px;
-}
-
 .hs-nav-dropdown-text {
   display: none;
   font-size: 14px;
@@ -69,6 +64,10 @@
   margin-top: 15px;
   top: 25px;
   z-index: 2;
+}
+
+.hero-section-nav > li:hover {
+  border-bottom: 3px solid #df6951;
 }
 
 .hs-nav-dropdown-text a:active,
