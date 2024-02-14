@@ -15,13 +15,16 @@
 .europe-sightseeing-tours-container {
   display: flex;
   justify-content: center;
+  margin: 150px 0;
+  padding: 0 20px;
 }
 
 .europe-sightseeing-tours-box {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  margin: 100px 0 250px 200px;
+  flex-direction: column;
+  max-width: 1350px;
+  flex: 1;
 }
 
 .europe-ss-subline {
@@ -60,6 +63,8 @@
 
 .europe-ss-imgs-section {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 925px;
   margin-top: 60px;
   gap: 40px;
 }
@@ -87,9 +92,12 @@
 }
 
 .europe-ss-eiffel-img {
+  width: 100%;
+}
+.europe-ss-eiffel-box {
   position: absolute;
-  scale: 0.8;
   z-index: -1;
-  right: 50px;
-  top: -10px;
+  right: 20px;
+  top: auto;
+  bottom: -65px;
 }
