@@ -1,103 +1,118 @@
 .partners-section {
-    display: flex;
-    width: 100%;
-    height:200px;
-    background: #F7F7F7;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background: #f7f7f7;
 }
 
 .partners-logo-img {
-    height: 50px;
-    margin: auto;
-    opacity:0.4;
-    filter: grayscale(100);
+  height: 50px;
+  margin: auto;
+  opacity: 0.4;
+  filter: grayscale(100);
 }
 
-.homepage-favorite-resort-contanier{
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 200px;
-    
-
+.honeymoon-specials-conteiner {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
-.favorite-resort-box{
-
-    position: relative;
-    margin-top: 200px;
-    margin-bottom: 250px;
-    max-width: 1370px;
-    display: flex;
+.honeymoon-specials-box {
+  flex: 1;
+  max-width: 1404px;
+  margin: 100px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-
-
-
-.resort-subline{
-
-
-    margin-bottom: 20px;
-    color: orangered;
-    font-size:20px;
-
-
-
-
+.honemoon-subtitle {
+  color: #df6951;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1.8px;
 }
 
-.resort-headline{
-    font-family: sans-serif;
-    text-transform: capitalize;
-    font-size: 30px;
-    color: #000050;
-    margin-bottom: 20px;
-    
+.honeymoon-title {
+  color: #181e4b;
+  font-size: 50px;
+  line-height: 71px;
+  font-weight: 700;
+  font-family: "Volkhov", serif;
 }
 
-.card-box{
-
-    display: flex;
-    padding-top: 23px;
-
-
-
+.honeymoon-prg {
+  color: black;
+  margin: 20px 0 30px 0;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
-.resort-prg{
-    
-    padding-left: 15px;
-    font-size: 19px;
-
-
-
+.honeymoon-button {
+  border-radius: 10px;
+  padding: 15px 22.5px;
+  color: white;
+  background-color: #df6951;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  border-style: none;
+  font-weight: 400;
 }
 
-.resort-subtitle{
-
-    color: #808080;
-
-
+.favorite-resort-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 150px 0;
+  margin-left: 6cm;
+  gap: 200px;
 }
 
-.resort-text{
-
-    display: flex;
-    color: #808080;
-    line-break: break-word;
-    
-
-
-}
-.value-img{
-
-    padding-bottom: 20px;
-
-
-}
-.trip-img{
-
-
+.resort-subline {
+  margin-bottom: 20px;
+  color: #df6951;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
 }
 
+.resort-headline {
+  font-family: "Volkhov", serif;
+  text-transform: capitalize;
+  font-size: 50px;
+  color: #000050;
+  margin-bottom: 20px;
+}
+
+.card-box {
+  display: flex;
+  padding-top: 25px;
+}
+
+.resort-prg {
+  padding-left: 15px;
+}
+
+.resort-subtitle {
+  color: #5e6282;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+}
+
+.resort-text {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  color: #5e6282;
+}
+
+.value-img {
+  max-height: 50px;
+}
+
+.trip-img {
+  width: 100%;
+}
