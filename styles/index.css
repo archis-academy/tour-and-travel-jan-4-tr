@@ -27,5 +27,74 @@
     font-family: Arial, sans-serif;
     font-weight: bold;
   }
+
+/* homepage-explore-section-start */
+
+  .homepage-explore-section{
+    display: flex;
+
+  }
+
+  .explore-section-img{    width: 100%;
+    flex: 1;}
+
+
+  .explore-section-caption-1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: rgb(250, 249, 249);
+    .button {text-align: center;}
+
+  }
+  .explore-section-line-1 {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    color: rgb(250, 249, 249);
+  }
+
+
+  .explore-section-caption-2 {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    color: rgb(250, 249, 249);  
+  }
+
+  .explore-section-line-2 {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    color: rgb(250, 249, 249);
+  }
   
-  
+  h2 {    
+    font-family: 'Volkhov', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    font-optical-sizing: auto;
+    opacity: 1;
+      }
+
+  h6 {
+    font-family: "Poppins variant6", Tofu;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    font-optical-sizing: auto;
+    opacity: 1;
+    text-align: center;
+  }
+  button {
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px; 
+    padding: 10px 15px; 
+    background-color: hsla(0, 0%, 100%, 0.1);    
+    border: 2px solid white; 
+}
+
+/* homepage-explore-section-start */
+
