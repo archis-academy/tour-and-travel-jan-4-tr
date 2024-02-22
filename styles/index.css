@@ -70,11 +70,6 @@
   border-bottom: 3px solid #df6951;
 }
 
-.hs-nav-dropdown-text a:active,
-.hs-nav-dropdown a:hover {
-  color: rgba(132, 132, 132, 0.84);
-}
-
 .hs-nav-dropdown:hover .hs-nav-dropdown-img,
 .hs-nav-dropdown:hover .hs-nav-dropdown-text {
   display: block;
