@@ -64,13 +64,25 @@
   font-weight: 400;
 }
 
-.favorite-resort-box {
+.homepage-favorite-resort-contanier {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   margin: 150px 0;
-  margin-left: 6cm;
-  gap: 200px;
+}
+
+.favorite-resort-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1350px;
+  flex: 1;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 1142px) {
+  .favorite-resort-box {
+    justify-content: center;
+  }
 }
 
 .resort-subline {
@@ -97,13 +109,8 @@
   padding-left: 15px;
 }
 
+.resort-text,
 .resort-subtitle {
-  color: #5e6282;
-  font-family: "Poppins", serif;
-  font-size: 16px;
-}
-
-.resort-text {
   font-family: "Poppins", serif;
   font-size: 16px;
   color: #5e6282;
