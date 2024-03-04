@@ -64,10 +64,10 @@
   font-weight: 400;
 }
 
+
+
 footer {
   position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
 .homepage-footer-container {
@@ -79,18 +79,24 @@ footer {
   font-family: "Manrope", sans-serif;
 }
 
-.mountain-png {
-  position: absolute;
-  width: 577px;
-  bottom: 0;
-  right: 0;
+
+.mountain-png{
+    position: absolute;
+    max-width: 577px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .homepage-footer {
+  max-width: 1200px;
+  flex: 1;
   display: flex;
-  justify-content: center;
-  gap: 140px;
-}
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 38px;
+
+}  
 
 .footer-subtitle {
   font-weight: 700;
@@ -137,14 +143,15 @@ footer {
   margin-bottom: 21px;
 }
 
-.footer-input {
-  width: 250px;
-  height: 52px;
-  background-color: #eeeeff;
-  margin-bottom: 20px;
-  outline: none;
-  border: none;
-  padding: 14px 20px;
+
+.footer-input{
+    width: 250px;
+    height: 52px;
+    background-color: #EEEEFF;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    padding: 14px 20px;
 }
 
 .footer-button {
@@ -167,8 +174,8 @@ footer {
   opacity: 50%;
 }
 
-hr {
-  width: 1200px;
+hr{
+  max-width: 1200px;
   height: 2px;
   background: #e5e5ea;
   margin: 0 auto;
