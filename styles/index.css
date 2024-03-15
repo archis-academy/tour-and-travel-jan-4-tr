@@ -67,3 +67,27 @@
   border-style: none;
   font-weight: 400;
 }
+
+.about-video-conteiner{
+  margin: 0 auto;
+  
+  
+}
+
+.video{
+  position: absolute;
+  z-index: -1;
+}
+
+.about-video-title{
+  font-weight: 400;
+  line-height: 223px;
+  font-size: 100px;
+  font-family: "Yesteryear", sans-serif;
+  color: #ffffff;
+  z-index: 2;
+  text-align: center;
+  padding: 90px;
+  
+
+}
