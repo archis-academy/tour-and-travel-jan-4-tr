@@ -43,7 +43,8 @@ p {
 
 .explore-section-img {
   width: 100%;
-  flex: 1;
+  height: 100%;
+  min-width: 450px;
   object-fit: cover;
 }
 
@@ -58,6 +59,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-weight: ;
   text-align: center;
   color: white;
 }
@@ -74,9 +76,9 @@ p {
 .explore-section-caption-h2 {
   position: relative;
   font-family: Volkhov;
-  font-size: 50px;
+  font-size: clamp(24px, 4vw, 50px);
   font-weight: 700;
-  line-height: 71px;
+  line-height: clamp(40px, 4vw, 70px);
   letter-spacing: 0em;
   color: white;
 }
@@ -96,4 +98,16 @@ p {
   color: white;
 }
 
+@media (max-widht: 900px) {
+  .homepage-explore-section {
+    min-height: 400px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .explore-section-img {
+    min-width: 250px;
+  }
+  .explore-section-line
+    left: 0;
+}
 /* homepage-explore-section-end */
