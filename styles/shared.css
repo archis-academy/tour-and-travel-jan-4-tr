@@ -23,7 +23,6 @@ a {
 }
 
 .homepage-hero-section-box {
-  margin-top: 80px;
   font-family: "Poppins", sans-serif;
   color: white;
   max-width: 1350px;
@@ -42,11 +41,12 @@ a {
   border: none;
   border-radius: 10px;
   background-color: #df6951;
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Poppins", sans-serif;
   color: white;
-  padding: 0 30px;
+  padding: 0px 30px;
   cursor: pointer;
+  line-height: 21px;
 }
 
 .hero-section-nav {
@@ -113,4 +113,5 @@ a {
   font-size: 157px;
   font-family: "yesteryear", sans-serif;
   line-height: 223px;
+  font-weight: 400;
 }
