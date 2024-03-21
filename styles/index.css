@@ -12,79 +12,8 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
-}
-
-.homepage-hero-section-box {
-  margin-top: 80px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  max-width: 1350px;
-}
-
-.hero-section-header {
-  display: flex;
-  gap: 150px;
-  font-size: 19px;
-}
-
-.hs-getintouch-button {
-  border: none;
-  border-radius: 10px;
-  background-color: #df6951;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  padding: 0 30px;
-  cursor: pointer;
-}
-
-.hero-section-nav {
-  display: flex;
-  gap: 35px;
-  padding: 15px 50px;
-}
-
-.hs-nav-dropdown-text {
-  display: none;
-  font-size: 14px;
-  color: white;
-  position: absolute;
-}
-
-.hs-nav-dropdown-img {
-  display: none;
-  position: absolute;
-  margin-left: -15px;
-  z-index: 1;
-}
-
-.hs-nav-dropdown-text a {
-  display: block;
-  position: relative;
-  margin-top: 15px;
-  top: 25px;
-  z-index: 2;
-}
-
-.hero-section-nav > li:hover {
-  border-bottom: 3px solid #df6951;
-}
-
-.hs-nav-dropdown:hover .hs-nav-dropdown-img,
-.hs-nav-dropdown:hover .hs-nav-dropdown-text {
-  display: block;
-}
-
-.hero-section-contents {
-  margin-top: 150px;
-  max-width: 800px;
-}
-
-.hero-section-contents h1 {
-  max-width: 630px;
-  font-size: 58px;
-  line-height: 67px;
-  margin-bottom: 30px;
+  height: 100vh;
+  padding: 0 20px;
 }
 
 .hs-travel-form {
@@ -138,7 +67,7 @@
 .hs-client-images-section {
   display: flex;
   margin-top: 30px;
-  margin-bottom: 300px;
+  
 }
 
 .hs-client-images img:not(:first-child) {
