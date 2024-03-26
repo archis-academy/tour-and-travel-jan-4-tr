@@ -63,3 +63,126 @@
   border-style: none;
   font-weight: 400;
 }
+
+footer {
+  position: relative;
+  padding: 0 20px;
+  margin-top: 150px;
+}
+
+.mountain-png {
+  position: absolute;
+  max-width: 577px;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.homepage-footer-container {
+  margin-top: 94px;
+  margin-bottom: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.homepage-footer {
+  max-width: 1200px;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 38px;
+}
+
+.footer-subtitle {
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 21px;
+  color: #181433;
+  margin-bottom: 24px;
+}
+
+#footer-icons {
+  width: 30px;
+  height: 20px;
+  color: #df6951;
+}
+
+.footer-prg {
+  color: #757095;
+  margin-bottom: 30px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+}
+
+.comp-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #181433;
+}
+
+.des-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #181433;
+}
+
+.footer-input-button {
+  display: flex;
+  margin-bottom: 21px;
+  flex-wrap: wrap;
+}
+
+.footer-input {
+  max-width: 250px;
+  background-color: #eeeeff;
+  outline: none;
+  border: none;
+  padding: 14px 20px;
+}
+
+.footer-button {
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: white;
+  background-color: #df6951;
+  border-style: none;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.footer-join-text {
+  color: #757095;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.32px;
+  opacity: 50%;
+}
+
+hr {
+  max-width: 1200px;
+  height: 2px;
+  background: #e5e5ea;
+  margin: 0 auto;
+}
+
+.footer-alt {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.32px;
+  color: #181433;
+}
