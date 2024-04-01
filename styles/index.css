@@ -64,77 +64,164 @@
   font-weight: 400;
 }
 
-/* Homepage Trending Tour Start 
+/* Homepage Trending Tour Start */
 
-.Homepage-Trending-Tour-Packages-Start {
-  margin: 50px 10px 10px 10px;
+.homepage-trending-tour-packages {
+  margin-top: 100px;
 }
-
-.Trending-Tour-Packeges-Title {
+.trending-tour-packeges-title {
   text-align: center;
+  margin: 0 auto;
+  width: 639px;
+  height: 171px;
 }
-
-.Trending-Tour-Packeges-Title-h4 {
+.tt-subtitle {
   font-family: Poppins;
   font-size: 18px;
   font-weight: 700;
   line-height: 27px;
-  letter-spacing: 0.1em;
-  color: rgb(190, 76, 51);
+  color: #df6951;
 }
-
-.Trending-Tour-Packeges-Title-h2 {
+.tt-title {
+  margin-top: 10px;
   font-family: Volkhov;
   font-size: 50px;
   font-weight: 700;
   line-height: 71.04px;
   text-align: center;
 }
-
-.Trending-Tour-Packeges-Countrys {
+.tt-countrys {
+  width: 1381px;
+  height: 696.13px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tt-countrys-details {
+  margin: 5px 50px;
+  width: 395px;
+  height: 696.13px;
+  top: 5757px;
+  left: 277px;
+  gap: 0px;
+  opacity: 0px;
+}
+.tour-img {
+}
+.contry-flag {
+  margin-top: -60px;
+  margin-right: 250px;
+}
+.tour-days-people {
+  display: flex;
+  font-family: Poppins;
+  font-size: 16.81px;
+  font-weight: 400;
+  line-height: 25.21px;
+  text-align: center;
+  color: #7d7d7d;
+  margin-top: -20px;
+}
+.calender-icon {
+  width: 24px;
+  height: 24px;
+}
+.stay-days {
+  margin-left: 10px;
+}
+.people-icon {
+  margin-left: 50px;
+  width: 20px;
+  height: 20px;
+}
+.people-going {
+  margin-left: 10px;
+}
+.city-name-rating {
+  display: flex;
   margin-top: 10px;
+  justify-content: space-between;
 }
-.Tour-Switzerland-Packege {
+
+.star-icon-list {
+  width: 92px;
+  height: 16px;
+  margin-top: 15px;
+  float: right;
+}
+
+.star-icon {
+  float: right;
+  width: 16px;
+  height: 16px;
+  padding: 0.5px 0px 0.5px 0px;
+}
+.country-location {
   display: flex;
-  float: left;
-  width: 30px;
-  height: 300px;
+  margin-top: 5px;
 }
-
-.Tour-Amazon-Packege {
+.location-icon {
+  width: 27.5px;
+  height: 27.5px;
+}
+.contry-name {
+  font-family: Poppins;
+  font-size: 16.81px;
+  font-weight: 400;
+  line-height: 25.21px;
+  color: #7d7d7d;
+  margin-left: 10px;
+}
+.tour-price {
   display: flex;
-  float: left;
-  width: 30px;
-  height: 300px;
+  margin-top: 5px;
+}
+.new-price {
+  font-family: Poppins;
+  font-size: 29.03px;
+  font-weight: 500;
+  line-height: 43.55px;
+  color: #df6951;
+}
+.old-price {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  text-decoration: line-through;
+  color: #7d7d7d;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.tour-info {
+  margin-top: 10px;
+
+  font-family: Poppins;
+  font-size: 12.22px;
+  font-weight: 400;
+  line-height: 24.45px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #000000;
+}
+.tour-explore-button {
+  padding: 10px 27.94px;
+  border-radius: 7.64px;
+  background: #df6951;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  border-style: none;
+  font-weight: 400;
 }
 
-.Tour-Giza-Packege {
-  display: flex;
-  float: left;
-  width: 30px;
-  height: 300px;
+.city-name {
+  font-family: Poppins;
+  font-size: 29.03px;
+  font-weight: 700;
+  line-height: 43.55px;
+  text-align: center;
 }
 
-.Tour-Days-People {
-  display: block;
-}
-
-.City-Name-Rating {
-  display: block;
-}
-
-.Country-Location {
-  display: block;
-}
-
-.Tour-Price {
-  display: block;
-}
-
-.Tour-Info {
-  display: block;
-}
-.Tour-Explore-Button {
-  display: block;
-}
- Homepage Trending Tour End */
+/*Homepage Trending Tour End */
