@@ -98,7 +98,7 @@ p {
   color: white;
 }
 
-@media (max-widht: 900px) {
+@media (max-width: 900px) {
   .homepage-explore-section {
     min-height: 400px;
     flex-wrap: wrap;
@@ -107,7 +107,5 @@ p {
   .explore-section-img {
     min-width: 250px;
   }
-  .explore-section-line
-    left: 0;
 }
 /* homepage-explore-section-end */
