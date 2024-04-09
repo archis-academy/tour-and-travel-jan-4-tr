@@ -17,8 +17,11 @@ a {
   background-image: url(/images/about/about-header-img.png);
   display: flex;
   justify-content: center;
+  background-position: bottom;
+  background-size: cover;
   overflow: hidden;
-  height: 733px;
+  height: 100vh;
+  width: 100%;
   padding: 0 20px;
 }
 
@@ -104,16 +107,16 @@ a {
 }
 
 .nav-title{
-  font-size: 18px;
   font-family: "Poppins", sans-serif;
-  line-height: 27px;
+  font-size: clamp(15px , 3vw , 18px);
+  line-height: clamp(40px , 3vw , 27px);
 }
 
 .nav-subtitle{
-  font-size: 157px;
   font-family: "yesteryear", sans-serif;
-  line-height: 223px;
   font-weight: 400;
+  font-size: clamp(50px , 10vw , 157px);
+  line-height: clamp(40px , 6px , 223);
 }
 
 .menu-toggle {
@@ -123,9 +126,7 @@ a {
     z-index: 5;
 }
 
-.hs-nav-dropdown {
-  display: none; 
-}
+
 
 @media (max-width: 1000px) {
   .hero-section-nav {
@@ -133,7 +134,9 @@ a {
   }
   
   .menu-toggle {
-    display: block; 
+    display: inline-block;
+     width: 36px;
+     height: 50px;
   }
 
   .menu-open .hero-section-nav {
@@ -144,7 +147,7 @@ a {
     display: block; 
   }
   .about-nav-title-subtitle{
-    display: none;
+    
   }
   .hs-getintouch-button{
     display: none;
