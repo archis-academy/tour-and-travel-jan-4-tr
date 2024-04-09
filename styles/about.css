@@ -1,0 +1,93 @@
+.about-promotion-conteiner {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.about-promotion-box {
+  flex: 1;
+  max-width: 1404px;
+  margin: 50px 0 0 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 650px;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.about-subtitle {
+  color: #df6951;
+  font-size: clamp(15px, 4vw, 18px);
+  line-height: clamp(40px, 4vw, 27px);
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1.8px;
+}
+
+.about-title {
+  max-width: 640px;
+  color: #181e4b;
+  font-size: clamp(22px, 4vw, 50px);
+  line-height: clamp(35px, 4vw, 71px);
+  font-weight: 700;
+  font-family: "Volkhov", serif;
+}
+
+.about-prg {
+  color: black;
+  margin-top: 15px;
+  font-size: clamp(10px, 4vw, 16px);
+  line-height: clamp(15px, 4vw, 26px);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.about-button {
+  border-radius: 10px;
+  padding: 15px 22.5px;
+  color: white;
+  background-color: #df6951;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  border-style: none;
+  font-weight: 400;
+}
+
+.about-img-div {
+  flex: 1;
+}
+
+.about-img {
+  width: 100%;
+  min-width: clamp(200px, 4vw, 350px);
+}
+.about-video-conteiner {
+  margin: 0 auto;
+}
+
+.about-video {
+  position: relative;
+  object-fit: cover;
+  object-position: top;
+}
+
+.about-video-play {
+  width: 100%;
+  max-height: 600px;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.about-video-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 400;
+  line-height: clamp(50px, 8vw, 223px);
+  font-size: clamp(50px, 8vw, 100px);
+  font-family: "Yesteryear", sans-serif;
+  color: #ffffff;
+}
