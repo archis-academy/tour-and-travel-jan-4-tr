@@ -266,3 +266,25 @@ hr {
   letter-spacing: -0.32px;
   color: #181433;
 }
+
+.homepage-banner-conteiner {
+  background-image: url(/images/liberty-statue-img.png);
+  background-size: cover;
+  background-position: bottom;
+  height: 399px;
+  flex: 1;
+  
+}
+
+.homepage-banner {
+  max-width: 1350px;
+  margin: 0 auto;
+  flex: 1;
+  color: white;
+  font-size: clamp(24px, 4vw, 40px);
+  font-weight: 700;
+  line-height: clamp(40px, 4vw, 70px);
+  font-family: "volkhov", serif;
+  padding: 90px 50px;
+  
+}
