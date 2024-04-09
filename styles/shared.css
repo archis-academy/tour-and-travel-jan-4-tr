@@ -13,18 +13,6 @@ a {
   color: inherit;
 }
 
-.about-nav-conteiner{
-  background-image: url(/images/about/about-header-img.png);
-  display: flex;
-  justify-content: center;
-  background-position: bottom;
-  background-size: cover;
-  overflow: hidden;
-  height: 100vh;
-  width: 100%;
-  padding: 0 20px;
-}
-
 .homepage-hero-section-box {
   font-family: "Poppins", sans-serif;
   color: white;
@@ -101,55 +89,32 @@ a {
   margin-bottom: 30px;
 }
 
-.about-nav-title-subtitle{
-  margin-top: 100px;
-  text-align: center;
-}
-
-.nav-title{
-  font-family: "Poppins", sans-serif;
-  font-size: clamp(15px , 3vw , 18px);
-  line-height: clamp(40px , 3vw , 27px);
-}
-
-.nav-subtitle{
-  font-family: "yesteryear", sans-serif;
-  font-weight: 400;
-  font-size: clamp(50px , 10vw , 157px);
-  line-height: clamp(40px , 6px , 223);
-}
-
 .menu-toggle {
-    display: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 5;
+  display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
 }
-
-
 
 @media (max-width: 1000px) {
   .hero-section-nav {
-    display: none; 
+    display: none;
   }
-  
+
   .menu-toggle {
     display: inline-block;
-     width: 36px;
-     height: 50px;
+    width: 36px;
+    height: 50px;
   }
 
   .menu-open .hero-section-nav {
-    display: block; 
+    display: block;
   }
 
   .menu-open .hs-nav-dropdown {
-    display: block; 
+    display: block;
   }
-  .hs-getintouch-button{
+  .hs-getintouch-button {
     display: none;
   }
 }
-
-
-
