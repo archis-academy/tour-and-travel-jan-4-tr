@@ -1,3 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage-hero-section-container {
+  background-image: url(/images/homepage-background.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+.hs-travel-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f3f3f395;
+  backdrop-filter: blur(8px);
+  padding: 30px 0;
+  border-radius: 5px;
+}
+
+.hs-form-datalist {
+  all: unset;
+  width: 150px;
+  padding-left: 40px;
+}
+
+.hs-form-datalist::placeholder {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.hs-form-selections {
+  outline: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: white;
+  padding: 5px;
+}
+
+.hs-form-selections:focus,
+.hs-form-selections:hover {
+  color: rgba(0, 0, 0, 0.432);
+}
+
+.hs-submit-input {
+  border: none;
+  border-radius: 10px;
+  background-color: #df6951;
+  padding: 10px 40px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.hs-client-images-section {
+  display: flex;
+  margin-top: 30px;
+  
+}
+
+.hs-client-images img:not(:first-child) {
+  margin-left: -15px;
+}
+
+.hs-client-plus {
+  position: absolute;
+  margin-left: -24px;
+  margin-top: 6px;
+}
+
+.hs-client-images-section > span {
+  margin: 10px;
+  font-size: 12.5px;
+}
+
+.hs-scroll-img {
+  position: absolute;
+  bottom: -20%;
+  left: 20px;
+}
+
+.hs-pageline-img {
+  position: absolute;
+  height: 3px;
+  bottom: 50px;
+}
+
 .partners-section {
   display: flex;
   width: 100%;

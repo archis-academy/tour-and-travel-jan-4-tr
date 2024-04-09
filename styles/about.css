@@ -1,3 +1,31 @@
+.about-nav-conteiner {
+  background-image: url(/images/about/about-header-img.png);
+  display: flex;
+  justify-content: center;
+  background-position: bottom;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  padding: 0 20px;
+}
+.about-nav-title-subtitle {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.nav-title {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(15px, 3vw, 18px);
+  line-height: clamp(40px, 3vw, 27px);
+}
+
+.nav-subtitle {
+  font-family: "yesteryear", sans-serif;
+  font-weight: 400;
+  font-size: clamp(50px, 10vw, 157px);
+  line-height: clamp(40px, 6px, 223);
+}
 .about-promotion-conteiner {
   margin: 0 auto;
   display: flex;
