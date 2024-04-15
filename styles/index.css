@@ -271,8 +271,12 @@ hr {
   background-image: url(/images/liberty-statue-img.png);
   background-size: cover;
   background-position: bottom;
+  background-position-x: 70%;
   height: 399px;
-  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
   
 }
 
@@ -285,6 +289,14 @@ hr {
   font-weight: 700;
   line-height: clamp(40px, 4vw, 70px);
   font-family: "volkhov", serif;
-  padding: 90px 50px;
+  padding: 0 20px; 
+
+}
+
+.homepage-banner-img-div{
+    max-width: 700px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
   
 }
