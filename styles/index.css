@@ -233,3 +233,34 @@
   border-style: none;
   font-weight: 400;
 }
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+
+@media (max-width: 1000px) {
+  .hero-section-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    width: 36px;
+    height: 50px;
+  }
+
+  .menu-open .hero-section-nav {
+    display: block;
+  }
+
+  .menu-open .hs-nav-dropdown {
+    display: block;
+  }
+  
+  .hs-getintouch-button {
+    display: none;
+    
+  }
