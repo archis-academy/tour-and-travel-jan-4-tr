@@ -94,7 +94,7 @@
 /* explore-packages-section-start */
 .about-explore-packages-section {
   margin: 0 auto;
-  padding: 75px;
+  padding: 75px 25px;
 }
 
 .about-explore-packages-section-title-subtitle {
@@ -122,47 +122,46 @@
 
 .about-explore-packages-section-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 363px));
   grid-auto-rows: auto;
+  justify-content: center;
   gap: 40px;
-  position: relative;
+}
+
+.explore-packages-img img {
+  width: 100%;
+  border-radius: 5%;
 }
 
 .explore-packages-img {
-  overflow: hidden;
-  width: 100%;
   height: 100%;
   object-fit: cover;
   position: relative;
+}
+
+.explore-packages-img-large img {
+  width: 100%;
+  border-radius: 5%;
 }
 
 .explore-packages-img-large {
   grid-row: span 2 / auto;
-  overflow: hidden;
-  width: 100%;
   height: 100%;
   object-fit: cover;
   position: relative;
 }
 
-.text-1 {
+.img-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
   color: white;
-  bottom: 25px;
-  left: 20px;
+  bottom: 20px;
+  left: 25px;
+  right: 25px;
   font-weight: normal;
   font-size: 18px;
   font-family: "Volkhov", serif;
-  position: absolute;
-}
-
-.text-2 {
-  color: white;
-  bottom: 25px;
-  left: 230px;
-  font-weight: normal;
-  font-size: 18px;
-  font-family: "Volkhov", serif;
-  position: absolute;
 }
 /* explore-packages-section-end */
 
