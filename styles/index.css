@@ -365,3 +365,53 @@ hr {
   letter-spacing: -0.32px;
   color: #181433;
 }
+
+.best-services{
+  text-align: center;
+  margin-top: 60px;
+}
+
+.services{
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 40px;
+  
+}
+
+.guided-tours{
+  margin-right: 8%;
+}
+
+.best-flights-options{
+  margin-right: 8%;
+}
+
+.Religious-tour{
+  margin-right: 8%;
+}
+
+.best-services-header{
+  font-family: volkhov;
+  font-weight: 700;
+  size: 50px;
+  line-height: 64.5px;
+  text-align: center;
+  color: #181E4B;
+  
+}
+
+p{
+  font-family: poppins;
+  color:#5E6282;
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 10px;
+
+}
+
+.category{
+  font-family: poppins;
+  color:#DF6951;
+  size: 18px;
+}
