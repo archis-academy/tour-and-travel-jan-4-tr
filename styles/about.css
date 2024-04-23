@@ -91,6 +91,35 @@
   min-width: clamp(200px, 4vw, 350px);
 }
 
+.about-video-conteiner {
+  margin: 0 auto;
+}
+
+.about-video {
+  position: relative;
+  object-fit: cover;
+  object-position: top;
+}
+
+.about-video-play {
+  width: 100%;
+  max-height: 600px;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.about-video-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 400;
+  line-height: clamp(50px, 8vw, 223px);
+  font-size: clamp(50px, 8vw, 100px);
+  font-family: "Yesteryear", sans-serif;
+  color: #ffffff;
+}
 /* explore-packages-section-start */
 .about-explore-packages-section {
   margin: 0 auto;
@@ -123,7 +152,6 @@
 .about-explore-packages-section-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 363px));
-  grid-auto-rows: auto;
   justify-content: center;
   gap: 40px;
 }
@@ -134,7 +162,7 @@
 }
 
 .explore-packages-img {
-  height: 100%;
+  display: flex;
   object-fit: cover;
   position: relative;
 }
@@ -143,14 +171,9 @@
   width: 100%;
   border-radius: 5%;
 }
-
-.explore-packages-img-large {
+.large {
   grid-row: span 2 / auto;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
 }
-
 .img-overlay {
   position: absolute;
   display: flex;
@@ -164,33 +187,3 @@
   font-family: "Volkhov", serif;
 }
 /* explore-packages-section-end */
-
-.about-video-conteiner {
-  margin: 0 auto;
-}
-
-.about-video {
-  position: relative;
-  object-fit: cover;
-  object-position: top;
-}
-
-.about-video-play {
-  width: 100%;
-  max-height: 600px;
-  min-height: 300px;
-  object-fit: cover;
-}
-
-.about-video-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-weight: 400;
-  line-height: clamp(50px, 8vw, 223px);
-  font-size: clamp(50px, 8vw, 100px);
-  font-family: "Yesteryear", sans-serif;
-  color: #ffffff;
-}
