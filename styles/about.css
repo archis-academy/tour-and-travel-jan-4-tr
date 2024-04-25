@@ -189,15 +189,10 @@
 
 
 .trend-section-statick-subtitle{
-  /* max-width: 555px; */
   display: flex;
   flex: 1;
   justify-content: center;
   gap: 50px;  
-}
-
-.statistic-img{
-  width: 100%;
 }
 
 .statick-h4{
@@ -222,8 +217,6 @@
 
 @media (max-width: 660px) {
   .trend-section-statick-subtitle {
-    display: flex;
-    flex: 1;
-    
+    flex-direction: column;
   }
 }
