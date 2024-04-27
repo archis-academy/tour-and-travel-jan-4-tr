@@ -314,3 +314,19 @@
   }
   
 }
+
+@media (max-width: 685px){
+  .angle-down-typ{
+  position: absolute;
+  margin-top: 43px;
+  margin-left: 90px;
+  }
+}
+
+@media (max-width: 685px){
+  .angle-down-duration{
+  position: absolute;
+  margin-bottom: 70px;
+  margin-left: 115px;
+  }
+}
