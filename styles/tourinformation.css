@@ -8,6 +8,7 @@
     height: 100vh;
     width: 100%;
     padding: 0 20px;
+    z-index: -1;
 }
 
 .tourinformation-nav-title-subtitle {
@@ -30,8 +31,9 @@
 
 .tourinformation-main-content {
     max-width: 75%;
-    margin: 0 auto;
+    margin: -75px auto 0;
     border: 2px solid black;
+    background-color: white;
 }
 
 .main-content-nav {
@@ -117,7 +119,6 @@ h4 {
 
 .main-content-form {
     width: 40%;
-    height: 977px;
     background-color: #F9F9F9;
     padding: 35px 45px;;
     margin-right: 25px;
@@ -154,5 +155,19 @@ input::placeholder {
 .form-footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 8px;
+}
+
+.form-button {
+    border: none;
+    border-radius: 10px;
+    background-color: #df6951;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 15px 10px;
+    cursor: pointer;
+    line-height: 21px;
+    width: 175px;
 }
