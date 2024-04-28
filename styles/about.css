@@ -167,10 +167,6 @@
   position: relative;
 }
 
-.explore-packages-img-large img {
-  width: 100%;
-  border-radius: 5%;
-}
 .large {
   grid-row: span 2 / auto;
 }
