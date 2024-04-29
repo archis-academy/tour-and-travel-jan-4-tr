@@ -111,6 +111,107 @@
   filter: grayscale(100);
 }
 
+.best-services-conteiner{
+  text-align: center;
+  margin-top: 60px;
+}
+
+.bs-services{
+  display:flex;
+  margin: 40px auto;
+  text-align: center;
+  justify-content: space-between;
+  max-width: 1350px;
+  margin-top: 40px;
+  
+}
+
+
+.orange-box{
+  width: 100px;
+  height: 100px;
+  background-color: rgba(223, 105, 81, 1);
+  position: absolute;
+  z-index: -1;
+  bottom: -30px;
+  left: -40px;
+  border-radius: 30px;
+}
+
+.image-fly-container{
+  position: relative;
+ 
+ 
+}
+.image-container{
+  position: relative;
+}
+
+.special-yellow-box{
+  position: absolute;
+  width: 50px;
+  height: 49px;
+  background-color: rgba(255, 241, 218, 1);
+  bottom: -10px;
+  right: 45px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+
+.yellow-box{
+  width: 50px;
+  height: 49px;
+  background-color: rgba(255, 241, 218, 1);
+  position: absolute;
+  top: 10px; 
+  left: 40px;
+  z-index: 1;
+  border-radius: 15px;
+
+}
+.back-image{
+  position: relative;
+  z-index: 1;
+}
+
+.service-fly{
+  position: relative;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+}
+
+.bs-main-title{
+  font-family: volkhov;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 64.5px;
+  text-align: center;
+  color: #181E4B;
+  
+}
+
+.service-exp{
+  font-family: poppins;
+  color:#5E6282;
+  font-size: 16px;
+  font-weight: 195px;
+  margin-top: 10px;
+  height: 78px;
+  
+}
+
+.bs-ct-title{
+  font-family: poppins;
+  color:#DF6951;
+  size: 18px;
+}
+
+.img-title{
+  margin-top: 20px;
+}
+
 .honeymoon-specials-conteiner {
   margin: 0 auto;
   display: flex;
@@ -366,52 +467,3 @@ hr {
   color: #181433;
 }
 
-.best-services{
-  text-align: center;
-  margin-top: 60px;
-}
-
-.services{
-  display:flex;
-  text-align: center;
-  justify-content: center;
-  margin-top: 40px;
-  
-}
-
-.guided-tours{
-  margin-right: 8%;
-}
-
-.best-flights-options{
-  margin-right: 8%;
-}
-
-.Religious-tour{
-  margin-right: 8%;
-}
-
-.best-services-header{
-  font-family: volkhov;
-  font-weight: 700;
-  size: 50px;
-  line-height: 64.5px;
-  text-align: center;
-  color: #181E4B;
-  
-}
-
-p{
-  font-family: poppins;
-  color:#5E6282;
-  font-size: 10px;
-  font-weight: 500;
-  margin-top: 10px;
-
-}
-
-.category{
-  font-family: poppins;
-  color:#DF6951;
-  size: 18px;
-}
