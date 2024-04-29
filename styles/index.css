@@ -41,6 +41,7 @@
   font-family: "Poppins", sans-serif;
   color: white;
   padding: 0px 30px;
+  margin-top: 5px;
   cursor: pointer;
   line-height: 21px;
 }
@@ -147,7 +148,7 @@
 .hs-client-images-section {
   display: flex;
   margin-top: 30px;
-  margin-bottom: 300px;
+  
 }
 
 .hs-client-images img:not(:first-child) {
@@ -249,7 +250,14 @@
   display: none;
   cursor: pointer;
   position: relative;
-  z-index: 5;
+  z-index: 100;
+}
+
+
+@media (max-width: 1000px){
+  .homepage-hero-section-container{
+    position: relative;
+  }
 }
 
 @media (max-width: 685px) {
@@ -274,6 +282,14 @@
 @media (max-width: 1000px) {
   .hero-section-nav {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    top: 90px;
+    background: black;
+    z-index: 100;
+
   }
 
   .menu-toggle {
@@ -330,3 +346,11 @@
   margin-left: 115px;
   }
 }
+
+@media (max-width: 630px){
+  .hs-client-images-section{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
