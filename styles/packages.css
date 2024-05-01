@@ -1,4 +1,4 @@
-.tourinformation-hero-section-container {
+.packages-hero-section-container {
     background-image: url(/images/location/tour-location-homepage.png);
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@
     font-size: 19px;
 }
 
-.tourinformation-nav-title-subtitle {
+.packages-nav-title-subtitle {
     margin-top: 100px;
     text-align: center;
 }
@@ -33,7 +33,7 @@
     line-height: clamp(40px, 6px, 223);
 }
 
-.tourinformation-main-content {
+.packages-main-content {
     max-width: 75%;
     margin: -75px auto 0;
     background-color: transparent;
@@ -41,19 +41,30 @@
 }
 
 .main-content-nav {
+    height: 141px;
     display: flex;
-    justify-content: space-between;
-    gap: 35px;
-    padding: 50px 50px;
-    background-color: #FFFFFF;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F8F8F8;
 }
 
 .clicked {
-   background-color: #FFFFFF; 
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #FFFFFF;
 }
 
 .not-clicked {
-    background-color: #F8F8F8;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;;
 }
 
 div a {
@@ -65,6 +76,7 @@ div a {
 .main-content-body {
     max-width: 1328px;
     display: flex;
+    padding: 25px 0;
 }
 
 .main-content-info {
@@ -124,6 +136,10 @@ div a {
     font-weight: lighter;
 }
 
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
 .flight-info {
     display: flex;
     gap: 50px;
@@ -136,20 +152,20 @@ div a {
 .question {
     display: flex;
     flex-direction: column;
-    align-items: space-between;
-    gap: 40px;
+    gap: 30px;
     padding: 40px 0;
     color: #DF6951;
-    font-weight: bold;
     letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .answer {
     display: flex;
     flex-direction: column;
     align-items: space-between;
-    gap: 43px;
+    gap: 35px;
     padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .answer-div {
@@ -220,11 +236,11 @@ input::placeholder {
 .main-content-gallery {
     display: flex;
     max-width: 1328px;
+    padding: 15px 0;
 }
 
 .main-content-gallery.grid {
     max-width: 65%;
-    padding: 25px;
 }
 
 .gallery-head {
