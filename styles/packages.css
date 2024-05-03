@@ -8,7 +8,6 @@
     height: 100vh;
     width: 100%;
     padding: 0 20px;
-    z-index: -1;
 }
 
 .nav-a {
@@ -42,29 +41,22 @@
 
 .main-content-nav {
     height: 141px;
+    padding: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #F8F8F8;
+    flex-wrap: wrap;
 }
 
-.clicked {
+.info-nav-btn {
     flex: 1;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    background-color: #FFFFFF;
-}
-
-.not-clicked {
-    flex: 1;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;;
+    background-color: #F8F8F8;
 }
 
 div a {
@@ -80,7 +72,7 @@ div a {
 }
 
 .main-content-info {
-    max-width: 65%;
+    max-width: 60%;
     padding: 25px 0;
     margin: 0 25px;
 }
@@ -186,7 +178,7 @@ p {
 }
 
 .main-content-form {
-    width: 35%;
+    width: 40%;
     background-color: #F9F9F9;
     padding: 35px 40px;
     margin-right: 25px;
@@ -249,6 +241,7 @@ input::placeholder {
     display: flex;
     max-width: 1328px;
     padding: 15px 0;
+    position: relative;
 }
 
 .main-content-gallery.grid {
@@ -281,12 +274,16 @@ input::placeholder {
 }
 
 .main-content-img {
-    max-width: 35%;
-    z-index: -1;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .main-content-img img {
-    width: 100%;
+    width: 120%;
+    position: absolute;
+    left: -80px;
+    right: 0;
 }
 
 footer {
@@ -429,5 +426,12 @@ hr {
     }
     .main-content-gallery {
         flex-wrap: wrap;
+    }
+    .main-content-img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-content-img img {
+        position: relative;
     }
 }
