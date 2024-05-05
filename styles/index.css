@@ -67,7 +67,6 @@
 .hs-client-images-section {
   display: flex;
   margin-top: 30px;
-  
 }
 
 .hs-client-images img:not(:first-child) {
@@ -162,7 +161,6 @@
   z-index: -1;
 }
 
-
 .yellow-box{
   width: 50px;
   height: 49px;
@@ -172,8 +170,8 @@
   left: -5px;
   z-index: 1;
   border-radius: 15px;
-
 }
+
 .back-image{
   position: relative;
   z-index: 1;
@@ -204,8 +202,7 @@
   font-weight: 500;
   margin-top: 10px;
   padding:0 30px 30px;
- 
-  
+   
 }
 
 .bs-ct-title{
@@ -269,6 +266,79 @@
   border-style: none;
   font-weight: 400;
 }
+
+.homepage-favorite-resorts-conteiner {
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-favorite-resorts-box {
+  flex: 1;
+  max-width: 1350px;
+  margin: 75px 0 0 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.homepage-favorite-resorts-title {
+  color: #df6951;
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: clamp(20px, 2vw, 27px);
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1.8px;
+}
+
+.homepage-favorite-resorts-subtit {
+  max-width: 640px;
+  color: #181e4b;
+  font-size: clamp(30px, 4vw, 50px);
+  line-height: clamp(45px, 4vw, 71px);
+  font-weight: 700;
+  font-family: "Volkhov", serif;
+}
+
+.homepage-favorite-resorts-context {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.homepage-favorite-resorts-tit {
+  color: #5e6282;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+.homepage-favorite-resorts-p {
+  color: #5e6282;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.homepage-favorite-resorts-value {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.homepage-favorite-resorts-plane-div {
+  flex-grow: 1;
+}
+
+.homepage-favorite-resorts-plane-img {
+  width: 100%;
+}
+
 /* homepage-explore-section-start */
 
 .homepage-explore-section {
@@ -473,3 +543,32 @@ hr {
   color: #181433;
 }
 
+.homepage-banner-conteiner {
+  background-image: url(/images/liberty-statue-img.png);
+  background-size: cover;
+  background-position: bottom;
+  background-position-x: 70%;
+  height: 399px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.homepage-banner {
+  max-width: 1350px;
+  margin: 0 auto;
+  flex: 1;
+  color: white;
+  font-size: clamp(24px, 4vw, 40px);
+  font-weight: 700;
+  line-height: clamp(40px, 4vw, 70px);
+  font-family: "volkhov", serif;
+  padding: 0 20px;
+}
+
+.homepage-banner-img-div {
+  max-width: 700px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
