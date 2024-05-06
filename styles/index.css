@@ -253,6 +253,29 @@
   z-index: 100;
 }
 
+.hs-getintouch-button-ham{
+  border: none;
+  border-radius: 10px;
+  background-color: #df6951;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 20px 30px;
+  margin-top: 5px;
+  cursor: pointer;
+  line-height: 21px;
+}
+
+.secondary-dropdown {
+  display: none;
+  /* İkinci açılır menüyü gizle */
+}
+
+.menu-open .secondary-dropdown {
+  display: block;
+  /* Hamburger menü açıldığında ikinci açılır menüyü göster */
+}
+
 
 @media (max-width: 1000px){
   .homepage-hero-section-container{
@@ -315,7 +338,7 @@
   
   .hs-getintouch-button {
     display: none;
-    
+
   }
 
   .hero-section-contents{
@@ -360,4 +383,21 @@
     flex-wrap: wrap;
   }
 }
+
+
+@media (min-width: 1000px) {
+    .hs-getintouch-button-ham{
+  display: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #df6951;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 0px 30px;
+  margin-top: 5px;
+  cursor: pointer;
+  line-height: 21px;
+    }  
+  }
 
