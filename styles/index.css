@@ -30,7 +30,8 @@
   justify-content: space-between;
   font-size: 19px;
   color: white;
-  padding-top: 60px 0;
+  padding-top: 30px;
+  align-items: center;
 }
 
 .hs-getintouch-button {
@@ -40,7 +41,7 @@
   font-size: 17px;
   font-family: "Poppins", sans-serif;
   color: white;
-  padding: 0px 30px;
+  padding: 20px 30px;
   margin-top: 5px;
   cursor: pointer;
   line-height: 21px;
@@ -50,6 +51,7 @@
   display: flex;
   gap: 35px;
   padding: 15px 50px;
+  align-items: center;
 }
 
 .hs-nav-dropdown-text {
@@ -148,7 +150,6 @@
 .hs-client-images-section {
   display: flex;
   margin-top: 30px;
-  
 }
 
 .hs-client-images img:not(:first-child) {
@@ -253,38 +254,14 @@
   z-index: 100;
 }
 
-.hs-getintouch-button-ham{
-  border: none;
-  border-radius: 10px;
-  background-color: #df6951;
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  padding: 20px 30px;
-  margin-top: 5px;
-  cursor: pointer;
-  line-height: 21px;
-}
-
-.secondary-dropdown {
-  display: none;
-  /* İkinci açılır menüyü gizle */
-}
-
-.menu-open .secondary-dropdown {
-  display: block;
-  /* Hamburger menü açıldığında ikinci açılır menüyü göster */
-}
-
-
-@media (max-width: 1000px){
-  .homepage-hero-section-container{
+@media (max-width: 1000px) {
+  .homepage-hero-section-container {
     position: relative;
   }
 }
 
 @media (max-width: 1000px) {
-  .hero-section-header{
+  .hero-section-header {
     padding-top: 30;
   }
 }
@@ -295,15 +272,15 @@
   }
 }
 
-@media (max-width:685px){
+@media (max-width: 685px) {
   .hs-travel-form {
     flex-direction: column;
     align-items: start;
   }
 }
 
-@media (max-width: 685px){
-  .hs-pageline-img{
+@media (max-width: 685px) {
+  .hs-pageline-img {
     display: none;
   }
 }
@@ -319,7 +296,7 @@
     top: 75px;
     background-color: rgba(80, 118, 145, 0.55);
     z-index: 100;
-
+    align-items: flex-start;
   }
 
   .menu-toggle {
@@ -335,17 +312,24 @@
   .menu-open .hs-nav-dropdown {
     display: block;
   }
-  
-  .hs-getintouch-button {
-    display: none;
 
+  .hs-getintouch-button {
+    border: none;
+    border-radius: 10px;
+    background-color: #df6951;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 20px 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    line-height: 21px;
+    width: 20%;
   }
 
-  .hero-section-contents{
+  .hero-section-contents {
     margin-top: 100px;
   }
-
- 
 }
 
 @media (max-width: 650px) {
@@ -358,46 +342,27 @@
   .hs-submit-input {
     width: 100%;
   }
-  
 }
 
-@media (max-width: 685px){
-  .angle-down-typ{
-  position: absolute;
-  margin-top: 43px;
-  margin-left: 90px;
+@media (max-width: 685px) {
+  .angle-down-typ {
+    position: absolute;
+    margin-top: 43px;
+    margin-left: 90px;
   }
 }
 
-@media (max-width: 685px){
-  .angle-down-duration{
-  position: absolute;
-  margin-bottom: 70px;
-  margin-left: 115px;
+@media (max-width: 685px) {
+  .angle-down-duration {
+    position: absolute;
+    margin-bottom: 70px;
+    margin-left: 115px;
   }
 }
 
-@media (max-width: 630px){
-  .hs-client-images-section{
+@media (max-width: 630px) {
+  .hs-client-images-section {
     display: flex;
     flex-wrap: wrap;
   }
 }
-
-
-@media (min-width: 1000px) {
-    .hs-getintouch-button-ham{
-  display: none;
-  border: none;
-  border-radius: 10px;
-  background-color: #df6951;
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  padding: 0px 30px;
-  margin-top: 5px;
-  cursor: pointer;
-  line-height: 21px;
-    }  
-  }
-
