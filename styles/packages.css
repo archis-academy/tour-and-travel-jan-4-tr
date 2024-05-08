@@ -59,22 +59,28 @@
     font-weight: 700;
     font-size: clamp(14px, 4vw, 18px);
     line-height: clamp(18px, 4vw, 20px);
+    color: #343434;
     cursor: pointer;
 }
 
 .info-nav-btn:hover {
     background-color: #d3d3d3;
-    color: #181433;
 }
 
 .main-content-body {
     max-width: 1328px;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content-body-left {
+    width: 60%;
+    display: flex;
     padding: 25px 0;
+    flex-direction: column;
 }
 
 .main-content-info {
-    max-width: 60%;
     padding: 25px 0;
     margin: 0 25px;
 }
@@ -93,6 +99,9 @@
 .country {
     font-size: clamp(15px, 4vw, 25px);
     line-height: clamp(20px, 4vw, 40px);
+    font-weight: 700;
+    font-family: "Volkhov", serif;
+    color: #181E4B;
 }
 
 .per-capita {
@@ -110,18 +119,23 @@
     letter-spacing: 1px;
     font-size: clamp(15px, 4vw, 25px);
     line-height: clamp(20px, 4vw, 40px);
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
 .slash {
     flex: 1;
     font-size: 35px;
     font-weight: lighter;
+    color: #7D7D7D;
 }
 
 .per-couple {
     flex: 1;
-    font-size: 13px;
-    font-weight: lighter;
+    font-size: clamp(12px, 4vw, 14px);
+    line-height: clamp(16px, 4vw, 20px);
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
 .content-head-lower {
@@ -132,14 +146,19 @@
 }
 
 .review {
-    font-size: 15px;
-    font-weight: lighter;
+    font-size: clamp(12px, 4vw, 15px);
+    line-height: clamp(14px, 4vw, 18px);
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #5E6282;
 }
 
 p {
     font-family: 'Poppins', sans-serif;
     font-size: clamp(10px, 4vw, 16px);
     line-height: clamp(15px, 4vw, 26px);
+    font-weight: 400;
+    color: #000000;
 }
 
 .flight-info {
@@ -163,85 +182,44 @@ p {
 .flight-sub-info h3 {
     color: #DF6951;
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(10px, 4vw, 16px);
-    line-height: clamp(15px, 4vw, 26px);
+    font-size: clamp(12px, 4vw, 16px);
+    line-height: clamp(16px, 4vw, 24px);
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
 .flight-sub-info h4 {
-    font-weight: lighter;
-    font-size: clamp(10px, 4vw, 16px);
-    line-height: clamp(15px, 4vw, 26px);
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: clamp(10px, 4vw, 14px);
+    line-height: clamp(14px, 4vw, 24px);
 }
 
 .answer-div {
     display: flex;
+    justify-content: center;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
-.main-content-form {
-    width: 40%;
-    background-color: #F9F9F9;
-    padding: 35px 40px;
-    margin-right: 25px;
-    overflow: hidden;
-}
-
-.form-head {
-    text-align: center; 
-}
-
-.form-head p {
-    padding: 10px 0;
-}
-
-.form-head h1 {
-    font-size: clamp(22px, 4vw, 35px);
-    line-height: clamp(35px, 4vw, 55px);
-}
-
-.form-body {
-    padding: 10px 0;
-}
-
-form {
+.answer-div h4, .flight-sub-info-answer h4 {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-input {
-    padding: 25px 15px;
-    border: none;
-}
-
-input::placeholder {
-    opacity: 0.5;
-    font-size: 14px;
-}
-
-.form-footer {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: clamp(10px, 4vw, 14px);
+    line-height: clamp(14px, 4vw, 24px);
 }
 
-.form-button {
-    border: none;
-    border-radius: 10px;
-    background-color: #df6951;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-    color: white;
-    padding: 15px 20px;
-    cursor: pointer;
-    width: 175px;
-    margin: 5px auto;
-}
-
-.form-button:hover {
-    background-color: #b86e14;
+.flight-sub-info-answer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .main-content-gallery {
@@ -257,8 +235,9 @@ input::placeholder {
 
 .h1-gallery {
     font-family: "Volkhov", serif;
-    padding: 15px;
     color: #181433;
+    padding: 16px 5px;
+    font-weight: 700;
     font-size: clamp(20px, 4vw, 45px);
     line-height: clamp(30px, 4vw, 60px);
 }
@@ -268,7 +247,7 @@ input::placeholder {
     grid-template-columns: repeat(auto-fit, minmax(150px, 190px));
     justify-content: center;
     gap: 15px;
-    padding: 15px;
+    padding: 0 15px;
 }
 
 .gallery-body img {
@@ -276,17 +255,101 @@ input::placeholder {
     border-radius: 5%;
 }
 
-.main-content-img {
-    width: 100%;
-    position: relative;
+.main-content-body-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
     overflow: hidden;
 }
 
+.main-content-form {
+    background-color: #F9F9F9;
+    padding: 35px 40px;
+    margin-right: 25px;
+}
+
+.form-head {
+    text-align: center; 
+}
+
+.form-head p {
+    padding: 10px 0;
+}
+
+.form-head h1 {
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    color: #181E4B;
+    font-size: clamp(22px, 4vw, 35px);
+    line-height: clamp(35px, 4vw, 55px);
+}
+
+.form-body {
+    padding: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form input {
+    padding: 25px 15px;
+    border: none;
+    background-repeat: no-repeat;
+    text-indent: 12px;
+}
+
+form input::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    opacity: 26%;
+    font-size: 14px;
+    font-size: clamp(10px, 4vw, 16px);
+    line-height: clamp(14px, 4vw, 20px);
+    color: #000000;
+}
+
+form input:focus {
+    background-image: none;
+}
+
+form input:focus::placeholder {
+    opacity: 0.1;
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-button {
+    border: none;
+    border-radius: 10px;
+    background-color: #df6951;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 15px 20px;
+    cursor: pointer;
+    width: 175px;
+    margin: 5px auto;
+}
+
+.form-button:hover {
+    background-color: #b86e14;
+}
+
 .main-content-img img {
-    width: 120%;
-    position: absolute;
-    left: -80px;
+    width: 100%;
+    position: relative;
     right: 0;
+    left: -60px;
 }
 
 footer {
@@ -416,25 +479,25 @@ hr {
 }
 
 @media screen and (max-width: 800px) {
-    .main-content-body {
+    .main-content-body-left {
         flex-wrap: wrap;
-    }
-    .main-content-form {
-        width: 100%;
-        justify-content: center;
-        margin-left: 25px;
-    }
-    .form-button {
-        width: auto;
     }
     .main-content-gallery {
         flex-wrap: wrap;
     }
-    .main-content-img {
-        display: flex;
-        flex-wrap: wrap;
+    .main-content-body-left {
+        width: 100%;
+    }
+    .main-content-body-right {
+        width: 100%;
+        justify-content: center;
+        margin-left: 25px;
+        padding: 50px 0;
+    }
+    .form-button {
+        width: auto;
     }
     .main-content-img img {
-        position: relative;
+        display: none;
     }
 }
