@@ -67,7 +67,6 @@
 .hs-client-images-section {
   display: flex;
   margin-top: 30px;
-  
 }
 
 .hs-client-images img:not(:first-child) {
@@ -165,7 +164,7 @@
 /* homepage-explore-section-start */
 
 .homepage-explore-section {
-  margin: 0 auto;
+  margin: 1000px auto 0 auto;
   display: flex;
   justify-content: center;
 }
@@ -375,8 +374,6 @@ hr {
   align-items: center;
   justify-content: center;
   display: flex;
-  
-  
 }
 
 .homepage-banner {
@@ -388,97 +385,102 @@ hr {
   font-weight: 700;
   line-height: clamp(40px, 4vw, 70px);
   font-family: "volkhov", serif;
-  padding: 0 20px; 
-
+  padding: 0 20px;
 }
 
-.homepage-banner-img-div{
-    max-width: 700px;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 0;
+.homepage-banner-img-div {
+  max-width: 700px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+
+/*bahtiyar */
+.europe-sightseeing-tours {
+  
+  margin: auto;
+}
+.tours-subtitle {
+  color: #c72020;
+  font-size: 15px;
+  font-family: "poppins" sans-serif;
+  margin: 20px 0px 0px 0px;
+}
+
+.tours-title {
+  font-size: 50px;
+  font-style: bold;
+  color: #111010;
+}
+
+.Tours-img1 {
+  width: 400px;
+  height: 600px;
+  border-start-end-radius: 250px;
+  border-start-start-radius: 250px;
+  margin: auto;
+  margin-left: 700px;
+  margin-top: 100px;
+  position: absolute;
+  z-index: -1;
+}
+
+.img-box {
+  display: flex;
+  margin-top: auto;
+  margin-top: 500px;
+  margin-left: 50px;
+  gap: 40px;
+  position: absolute;
   
 }
-
-
-.Europe Sightseeing Tours{
- display: block;
- margin: auto;
-
-  }
-.tours-subtitle{
- color: #c72020;
- font-size: 15px;
- font-family: "poppins" sans-serif;
- margin: 20px 0px 0px 0px; 
-}
-
-.tours-title{
-    font-size: 50px;
-    font-style: bold;
-    color: #111010;
-    
-    
-}
-
-.Tours-img1{
- width: 400px;
- height: 600px;
- border-start-end-radius: 250px;
- border-start-start-radius: 250px;
- margin:auto;
- margin-left: 700px;
- margin-top: 100px;
- position: absolute;
- z-index: -1;
+.europe-img-container{
+  position: relative; 
 
 }
-
-.img-box{
-    display:flex;
-    margin-top:auto;
-    margin-top: 500px;
-    margin-left: 50px;
-    gap: 40px;
-    position:absolute;
-    z-index: -1;
-
-    
+.europe-image{
+  width: 150px;
+  height: 160px;
 }
-.tours-btn{
-    border-radius: 10px;
+.europe-price{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: white;
+  background-color: #DF6951;
+  padding: 5px 18px 5px 18px;
+  border-radius: 14px;
+}
+
+.tours-btn {
+  border-radius: 10px;
   padding: 15px 22.5px;
   color: white;
   background-color: #df6951;
   font-family: "Poppins", sans-serif;
   border-style: none;
   font-weight: 400;
-
 }
-.Tours-subtitle-prg-btn{
-    margin:100px 0px 0px 50px;
-    position: absolute;
-    z-index: -1;
-
+.Tours-subtitle-prg-btn {
+  margin: 100px 0px 0px 50px;
+  position: absolute;
+ 
 }
-.tours-price{
-   display: flex;
-    position: absolute;
-    z-index: +1;  
-    margin-left: 80px;
-    margin-top: 20px;
-    width: 600px;
-    gap:130px
-
-    
+.tours-price {
+  display: flex;
+  position: absolute;
+  z-index: +1;
+  margin-left: 80px;
+  margin-top: 20px;
+  width: 600px;
+  gap: 130px;
 }
-.text-price{
-    display:flex;
-    width: 40px;
-    height: 20px;
-    color:#FFFFFF;    ;
-    background-color: #cc3d3d;
-    border-radius: 40px;
-    border: none;
-
+.text-price {
+  display: flex;
+  width: 40px;
+  height: 20px;
+  color: #ffffff;
+  background-color: #cc3d3d;
+  border-radius: 40px;
+  border: none;
 }
