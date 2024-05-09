@@ -299,7 +299,10 @@ form input {
     padding: 25px 15px;
     border: none;
     background-repeat: no-repeat;
-    text-indent: 12px;
+    text-indent: 30px;
+    background-size: 18px 18px;
+    background-position: 16px center;
+    font-size: 18px;
 }
 
 form input::placeholder {

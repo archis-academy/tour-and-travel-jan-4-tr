@@ -11,7 +11,7 @@ function openPage(elmnt, color) {
     elmnt.style.backgroundColor = color;
 }
 
-// Code to click the default button when the page loads
+// Click the default button when the page loads
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("default-open").click();
 });
