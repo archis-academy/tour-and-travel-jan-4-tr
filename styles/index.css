@@ -110,13 +110,13 @@
   filter: grayscale(100);
 }
 
-.best-services-conteiner{
+.best-services-conteiner {
   text-align: center;
   margin-top: 60px;
 }
 
-.bs-services{
-  display:flex;
+.bs-services {
+  display: flex;
   margin: 40px auto;
   text-align: center;
   justify-content: space-between;
@@ -124,11 +124,9 @@
   margin-top: 40px;
   flex-wrap: wrap;
   gap: 35px;
-  
 }
 
-
-.orange-box{
+.orange-box {
   width: 100px;
   height: 100px;
   background-color: rgba(223, 105, 81, 1);
@@ -139,45 +137,44 @@
   border-radius: 30px;
 }
 
-.image-fly-container{
+.image-fly-container {
   position: relative;
   display: inline-block;
-
 }
-.image-container{
+.image-container {
   position: relative;
   display: inline-block;
   justify-content: center;
 }
 
-.special-yellow-box{
+.special-yellow-box {
   position: absolute;
   width: 50px;
   height: 49px;
   background-color: rgba(255, 241, 218, 1);
   bottom: -10px;
-  right:-15px;
+  right: -15px;
   border-radius: 10px;
   z-index: -1;
 }
 
-.yellow-box{
+.yellow-box {
   width: 50px;
   height: 49px;
   background-color: rgba(255, 241, 218, 1);
   position: absolute;
-  top: 10px; 
+  top: 10px;
   left: -5px;
   z-index: 1;
   border-radius: 15px;
 }
 
-.back-image{
+.back-image {
   position: relative;
   z-index: 1;
 }
 
-.service-fly{
+.service-fly {
   position: relative;
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 1);
@@ -185,33 +182,31 @@
   box-shadow: 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.1);
 }
 
-.bs-main-title{
+.bs-main-title {
   font-family: volkhov;
   font-weight: 700;
   font-size: 35px;
   line-height: 64.5px;
   text-align: center;
-  color: #181E4B;
-  
+  color: #181e4b;
 }
 
-.service-exp{
+.service-exp {
   font-family: poppins;
   color: rgba(94, 98, 130, 1);
   font-size: 16px;
   font-weight: 500;
   margin-top: 10px;
-  padding:0 30px 30px;
-   
+  padding: 0 30px 30px;
 }
 
-.bs-ct-title{
+.bs-ct-title {
   font-family: poppins;
-  color:#DF6951;
+  color: #df6951;
   size: 18px;
 }
 
-.img-title{
+.img-title {
   margin-top: 20px;
 }
 
@@ -571,4 +566,159 @@ hr {
   display: flex;
   justify-content: flex-end;
   padding: 10px 0;
+}
+
+.homepage-trending-tour-packages {
+  margin-top: 100px;
+  padding: 0 20px;
+}
+.trending-tour-packeges-title {
+  text-align: center;
+  margin: 0 auto;
+  width: 639px;
+  height: 171px;
+}
+.tt-subtitle {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #df6951;
+}
+.tt-title {
+  margin-top: 10px;
+  font-family: Volkhov;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 71.04px;
+  text-align: center;
+}
+.tt-countrys {
+  width: 1381px;
+  height: 696.13px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tt-countrys-details {
+  margin: 5px 50px;
+}
+
+.tour-img {
+}
+
+.contry-flag {
+  margin-top: -60px;
+  margin-right: 250px;
+}
+.tour-days-people {
+  display: flex;
+  font-family: Poppins;
+  font-size: 16.81px;
+  font-weight: 400;
+  line-height: 25.21px;
+  text-align: center;
+  color: #7d7d7d;
+  margin-top: -20px;
+}
+.calender-icon {
+  width: 24px;
+  height: 24px;
+}
+.stay-days {
+  margin-left: 10px;
+}
+.people-icon {
+  margin-left: 50px;
+  width: 20px;
+  height: 20px;
+}
+.people-going {
+  margin-left: 10px;
+}
+.city-name-rating {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.star-icon-list {
+  width: 92px;
+  height: 16px;
+  margin-top: 15px;
+  float: right;
+}
+
+.star-icon {
+  float: right;
+  width: 16px;
+  height: 16px;
+  padding: 0.5px 0px 0.5px 0px;
+}
+.country-location {
+  display: flex;
+  margin-top: 5px;
+}
+.location-icon {
+  width: 27.5px;
+  height: 27.5px;
+}
+.contry-name {
+  font-family: Poppins;
+  font-size: 16.81px;
+  font-weight: 400;
+  line-height: 25.21px;
+  color: #7d7d7d;
+  margin-left: 10px;
+}
+.tour-price {
+  display: flex;
+  margin-top: 5px;
+}
+.new-price {
+  font-family: Poppins;
+  font-size: 29.03px;
+  font-weight: 500;
+  line-height: 43.55px;
+  color: #df6951;
+}
+.old-price {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  text-decoration: line-through;
+  color: #7d7d7d;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.tour-info {
+  margin-top: 10px;
+
+  font-family: Poppins;
+  font-size: 12.22px;
+  font-weight: 400;
+  line-height: 24.45px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #000000;
+}
+.tour-explore-button {
+  padding: 10px 27.94px;
+  border-radius: 7.64px;
+  background: #df6951;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  border-style: none;
+  font-weight: 400;
+}
+
+.city-name {
+  font-family: Poppins;
+  font-size: 29.03px;
+  font-weight: 700;
+  line-height: 43.55px;
+  text-align: center;
 }
