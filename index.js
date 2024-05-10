@@ -28,10 +28,13 @@ function handleResize() {
     navbarMenu.style.display = "flex";
     navbarButton.style.display = "inline-block";
     document.body.style.overflow = "auto";
+    isOpen = open;
   } else {
     navbarMenu.style.display = "none";
+    mainContent.style.display = "inline-block";
     navbarButton.style.display = "none";
     document.body.style.overflow = "auto";
+    isOpen = close;
   }
 }
 

@@ -181,6 +181,121 @@
   height: 3px;
   bottom: 50px;
 }
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+@media (max-width: 1000px) {
+  .homepage-hero-section-container {
+    position: relative;
+  }
+
+  .hero-section-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    top: 75px;
+    background-color: rgba(80, 118, 145, 0.55);
+    z-index: 100;
+    align-items: flex-start;
+  }
+  .menu-toggle {
+    display: inline-block;
+    width: 36px;
+    height: 50px;
+  }
+  .menu-open .hero-section-nav {
+    display: block;
+  }
+  .menu-open .hs-nav-dropdown {
+    display: block;
+  }
+  .hs-getintouch-button {
+    border: none;
+    border-radius: 10px;
+    background-color: #df6951;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 20px 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    line-height: 21px;
+    margin: 0;
+  }
+  .hero-section-contents {
+    margin-top: 100px;
+  }
+  .hs-nav-dropdown {
+    overflow: hidden;
+    height: 25px;
+  }
+  .hs-nav-dropdown:hover {
+    height: fit-content;
+  }
+  .hs-nav-dropdown-img {
+    display: none !important;
+  }
+  .hs-nav-dropdown-text {
+    display: inline-block;
+    position: static;
+    padding-left: 15px;
+  }
+  .hs-nav-dropdown-text li:hover {
+    border-bottom: 1px solid #df6951;
+    padding-bottom: 2px;
+  }
+  .hs-nav-dropdown-text a {
+    position: static;
+  }
+}
+@media (max-width: 685px) {
+  .line-img {
+    display: none;
+  }
+
+  .hs-travel-form {
+    flex-direction: column;
+    align-items: start;
+  }
+  .hs-pageline-img {
+    display: none;
+  }
+  .angle-down-typ {
+    position: absolute;
+    margin-top: 43px;
+    margin-left: 90px;
+  }
+  .angle-down-duration {
+    position: absolute;
+    margin-bottom: 70px;
+    margin-left: 115px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hs-scroll-img {
+    width: 260px;
+  }
+}
+
+@media (max-width: 827px) {
+  .hs-submit-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 630px) {
+  .hs-client-images-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .partners-section {
   display: flex;
@@ -246,103 +361,4 @@
   margin-top: 10px;
   border-style: none;
   font-weight: 400;
-}
-
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  position: relative;
-  z-index: 100;
-}
-
-@media (max-width: 685px) {
-  .line-img {
-    display: none;
-  }
-
-  .hs-travel-form {
-    flex-direction: column;
-    align-items: start;
-  }
-  .hs-pageline-img {
-    display: none;
-  }
-  .angle-down-typ {
-    position: absolute;
-    margin-top: 43px;
-    margin-left: 90px;
-  }
-  .angle-down-duration {
-    position: absolute;
-    margin-bottom: 70px;
-    margin-left: 115px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .homepage-hero-section-container {
-    position: relative;
-  }
-  .hero-section-header {
-    padding-top: 30;
-  }
-  .hero-section-nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    top: 75px;
-    background-color: rgba(80, 118, 145, 0.55);
-    z-index: 100;
-    align-items: flex-start;
-  }
-  .menu-toggle {
-    display: inline-block;
-    width: 36px;
-    height: 50px;
-  }
-  .menu-open .hero-section-nav {
-    display: block;
-  }
-  .menu-open .hs-nav-dropdown {
-    display: block;
-  }
-  .hs-getintouch-button {
-    border: none;
-    border-radius: 10px;
-    background-color: #df6951;
-    font-size: 17px;
-    font-family: "Poppins", sans-serif;
-    color: white;
-    padding: 20px 30px;
-    margin-top: 5px;
-    cursor: pointer;
-    line-height: 21px;
-    width: 20%;
-    margin: 0;
-  }
-  .hero-section-contents {
-    margin-top: 100px;
-  }
-}
-
-@media (max-width: 650px) {
-  .hs-scroll-img {
-    width: 260px;
-  }
-}
-
-@media (max-width: 827px) {
-  .hs-submit-input {
-    width: 100%;
-  }
-}
-
-@media (max-width: 630px) {
-  .hs-client-images-section {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
