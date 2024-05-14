@@ -12,3 +12,109 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.homepage-hero-section-box {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  max-width: 1350px;
+  flex: 1;
+}
+
+.hero-section-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+  color: white;
+  padding: 60px 0;
+}
+
+.hs-getintouch-button {
+  border: none;
+  border-radius: 10px;
+  background-color: #df6951;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 0px 30px;
+  cursor: pointer;
+  line-height: 21px;
+}
+
+.hero-section-nav {
+  display: flex;
+  gap: 35px;
+  padding: 15px 50px;
+}
+
+.hs-nav-dropdown-text {
+  display: none;
+  font-size: 14px;
+  color: white;
+  position: absolute;
+}
+
+.hs-nav-dropdown-img {
+  display: none;
+  position: absolute;
+  margin-left: -15px;
+  z-index: 1;
+}
+
+.hs-nav-dropdown-text a {
+  display: block;
+  position: relative;
+  margin-top: 15px;
+  top: 25px;
+  z-index: 2;
+}
+
+.hero-section-nav > li:hover {
+  border-bottom: 3px solid #df6951;
+}
+
+.hs-nav-dropdown:hover .hs-nav-dropdown-img,
+.hs-nav-dropdown:hover .hs-nav-dropdown-text {
+  display: block;
+}
+
+.hero-section-contents {
+  margin-top: 150px;
+  max-width: 800px;
+}
+
+.hero-section-contents h1 {
+  max-width: 630px;
+  font-size: 58px;
+  line-height: 67px;
+  margin-bottom: 30px;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+
+@media (max-width: 1000px) {
+  .hero-section-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    width: 36px;
+    height: 50px;
+  }
+
+  .menu-open .hero-section-nav {
+    display: block;
+  }
+
+  .menu-open .hs-nav-dropdown {
+    display: block;
+  }
+  .hs-getintouch-button {
+    display: none;
+  }
+}
