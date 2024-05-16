@@ -12,10 +12,6 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Volkhov"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link
@@ -32,9 +28,12 @@
             src="/images/logo.png"
             alt="travel-logo"
           />
-          <ul class="hero-section-nav">
+          <div onclick="toggleBtn()" class="menu-toggle">
+            <img src="/images/hamburger-icon.png" alt="hamburger-img" />
+          </div>
+          <ul class="hero-section-nav" id="section-nav">
             <li><a href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="#">About</a></li>
             <div class="hs-nav-dropdown">
               <li><a href="#">Services</a> <i class="fa fa-caret-down"></i></li>
               <img
@@ -46,7 +45,7 @@
                 <li><a href="#">Honeymoon Packages</a></li>
                 <li><a href="#">Tours Packages</a></li>
                 <li><a href="#">Musical Events</a></li>
-                <li><a href="#">Build Package</a></li>
+                <li><a class="Build-title" href="#">Build Package</a></li>
               </ul>
             </div>
             <li><a href="packages.html">Upcomming Packages</a></li>
@@ -70,22 +69,26 @@
               <option value="Italy">Italy</option>
               <option value="Turkey">Turkey</option>
             </datalist>
-            <img src="images/line.png" alt="line" />
+            <img class="line-img" src="images/line.png" alt="line" />
             <select class="hs-form-selections">
               <option value="--">Travel Type</option>
               <option value="plane">By Plane</option>
               <option value="car">By Car</option>
               <option value="ship">By Ship</option>
             </select>
-            <i style="font-size: 30px" class="fa fa-angle-down"></i>
-            <img src="images/line.png" alt="line" />
+            <div class="angle-down-typ">
+              <i style="font-size: 30px" class="fa fa-angle-down"></i>
+            </div>
+            <img class="line-img" src="images/line.png" alt="line" />
             <select class="hs-form-selections">
               <option value="--">Duration</option>
               <option value="one day">1 Day</option>
               <option value="one week">1 week</option>
               <option value="one month">1 month</option>
             </select>
-            <i style="font-size: 30px" class="fa fa-angle-down"></i>
+            <div class="angle-down-duration">
+              <i style="font-size: 30px" class="fa fa-angle-down"></i>
+            </div>
             <input
               style="cursor: pointer"
               class="hs-submit-input"
@@ -95,13 +98,41 @@
           </form>
           <div class="hs-client-images-section">
             <div class="hs-client-images">
-              <img src="images/user-avatar2.png" alt="user-image" />
-              <img src="images/user-avatar3.png" alt="user-image" />
-              <img src="images/user-avatar4.png" alt="user-image" />
-              <img src="images/user-avatar1.png" alt="user-image" />
-              <img src="images/user-avatar5.png" alt="user-image" />
-              <img src="images/user-avatar6.png" alt="user-image" />
-              <img src="images/user-avatar-emty.png" alt="user-image" />
+              <img
+                class="uster-avatar-res"
+                src="images/user-avatar2.png"
+                alt="user-image"
+              />
+              <img
+                class="uster-avatar-res"
+                src="images/user-avatar3.png"
+                alt="user-image"
+              />
+              <img
+                class="uster-avatar-res"
+                src="images/user-avatar4.png"
+                alt="user-image"
+              />
+              <img
+                class="uster-avatar-res"
+                src="images/user-avatar1.png"
+                alt="user-image"
+              />
+              <img
+                class="uster-avatar-res"
+                src="images/user-avatar5.png"
+                alt="user-image"
+              />
+              <img
+                class="uster-avatar-res"
+                src="images/user-avatar6.png"
+                alt="user-image"
+              />
+              <img
+                class="uster-avatar-res"
+                src="images/user-avatar-emty.png"
+                alt="user-image"
+              />
               <span class="hs-client-plus">+</span>
             </div>
             <span>2,500 people booked Tomorrowland Event in last 24 hours</span>
@@ -119,6 +150,76 @@
       <img class="partners-logo-img" src="images/partner-logo1.png" />
       <img class="partners-logo-img" src="images/partner-logo2.png" />
     </div>
+    <!--best services start-->
+    <div class="best-services-conteiner">
+      <div class="bs-title-box">
+        <div class="bs-ct-title">
+          <h6>CATEGORY</h6>
+        </div>
+        <div class="bs-main-title">
+          <h2>We Offer Best Services</h2>
+        </div>
+      </div>
+
+      <div class="bs-services">
+        <div class="service">
+          <div class="image-container">
+            <div class="special-yellow-box"></div>
+            <img src="images/homepage-services-human.png" alt="service1" />
+          </div>
+          <h4 class="img-title">Guided Tours</h4>
+          <p class="service-exp">
+            sunt qui repellat saepe <br />
+            quo velit aperiam id <br />
+            aliquam placeat.
+          </p>
+        </div>
+
+        <div class="service service-fly">
+          <div class="orange-box"></div>
+          <div class="image-fly-container">
+            <div class="yellow-box"></div>
+            <img
+              src="images/homepage-services-plane.png"
+              alt="service2"
+              class="back-image"
+            />
+          </div>
+          <h4 class="img-title">Best Flights Option</h4>
+          <p class="service-exp">
+            sunt qui repellat saepe <br />
+            quo velit aperiam id <br />
+            aliquam placeat.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="image-container">
+            <div class="special-yellow-box"></div>
+            <img src="images/homepage-services-hands.png" alt="service3" />
+          </div>
+          <h4 class="img-title">Religious Tours</h4>
+          <p class="service-exp">
+            sunt qui repellat saepe <br />quo velit aperiam id <br />aliquam
+            placeat.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="image-container">
+            <div class="special-yellow-box"></div>
+            <img src="images/homepage-services-medical.png" alt="service4" />
+          </div>
+          <h4 class="img-title">Medical İnsurance</h4>
+          <p class="service-exp">
+            sunt qui repellat saepe <br />
+            quo velit aperiam id <br />
+            aliquam placeat.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--best services end-->
     <div class="honeymoon-specials-conteiner">
       <div class="honeymoon-specials-box">
         <img class="honeymoon-img" src="images/Illustration.png" alt="images" />
@@ -141,6 +242,73 @@
         </div>
       </div>
     </div>
+
+    <div class="homepage-favorite-resorts-conteiner">
+      <div class="homepage-favorite-resorts-box">
+        <div class="homepage-favorite-resorts-tit-subtit-val">
+          <h4 class="homepage-favorite-resorts-title">Fast & Easy</h4>
+          <h2 class="homepage-favorite-resorts-subtit">
+            Get Your Favourite <br />
+            Resort Bookings
+          </h2>
+          <div class="homepage-favorite-resorts-value">
+            <div class="homepage-favorite-resorts-context">
+              <img
+                class="homepage-favorite-img-2"
+                src="images/value-image-1.png"
+                alt="value-image"
+              />
+              <div class="homepage-favorite-resorts-tit-p">
+                <h5 class="homepage-favorite-resorts-tit">
+                  Choose Destination
+                </h5>
+                <p class="homepage-favorite-resorts-p">
+                  Lorem ipsum dolor sit amet, consectetur <br />
+                  adipiscing elit. Urna, tortor tempus.
+                </p>
+              </div>
+            </div>
+            <div class="homepage-favorite-resorts-context">
+              <img
+                class="homepage-favorite-img-2"
+                src="images/value-image-3.png"
+                alt="value-image"
+              />
+              <div class="homepage-favorite-resorts-tit-sub">
+                <h5 class="homepage-favorite-resorts-tit">
+                  Check Availability
+                </h5>
+                <p class="homepage-favorite-resorts-p">
+                  Lorem ipsum dolor sit amet, consectetur <br />
+                  adipiscing elit. Urna, tortor tempus.
+                </p>
+              </div>
+            </div>
+            <div class="homepage-favorite-resorts-context">
+              <img
+                class="homepage-favorite-img-2"
+                src="images/value-image-2.png"
+                alt="value-image"
+              />
+              <div class="homepage-let-tit-sub">
+                <h5 class="homepage-favorite-resorts-tit">Let’s Go</h5>
+                <p class="homepage-favorite-resorts-p">
+                  Lorem ipsum dolor sit amet, consectetur <br />
+                  adipiscing elit. Urna, tortor tempus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="homepage-favorite-resorts-plane-div">
+          <img
+            class="homepage-favorite-resorts-plane-img"
+            src="images/book-trip-img.png"
+            alt="images"
+          />
+        </div>
+      </div>
+    </div>
     <div class="homepage-banner-conteiner">
       <div class="homepage-banner">
         <div class="homepage-banner-title">
@@ -158,6 +326,7 @@
         </div>
       </div>
     </div>
+
     <!--Explore section start-->
     <div class="homepage-explore-section">
       <div class="explore-section-textbox">
@@ -265,5 +434,6 @@
       <hr />
       <p class="footer-alt">Copyright @ Xpro 2022. All Rights Reserved.</p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

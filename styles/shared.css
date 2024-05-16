@@ -13,19 +13,13 @@ a {
   color: inherit;
 }
 
-.homepage-hero-section-box {
-  font-family: "Poppins", sans-serif;
-  color: white;
-  max-width: 1350px;
-  flex: 1;
-}
-
 .hero-section-header {
   display: flex;
   justify-content: space-between;
   font-size: 19px;
   color: white;
-  padding: 60px 0;
+  padding-top: 30px;
+  align-items: center;
 }
 
 .hs-getintouch-button {
@@ -35,15 +29,18 @@ a {
   font-size: 17px;
   font-family: "Poppins", sans-serif;
   color: white;
-  padding: 0px 30px;
+  padding: 20px 30px;
+  margin-top: 5px;
   cursor: pointer;
   line-height: 21px;
+  margin-left: 100px;
 }
 
 .hero-section-nav {
   display: flex;
   gap: 35px;
   padding: 15px 50px;
+  align-items: center;
 }
 
 .hs-nav-dropdown-text {
@@ -76,45 +73,73 @@ a {
 .hs-nav-dropdown:hover .hs-nav-dropdown-text {
   display: block;
 }
-
-.hero-section-contents {
-  margin-top: 150px;
-  max-width: 800px;
-}
-
-.hero-section-contents h1 {
-  max-width: 630px;
-  font-size: 58px;
-  line-height: 67px;
-  margin-bottom: 30px;
-}
-
 .menu-toggle {
   display: none;
   cursor: pointer;
   position: relative;
-  z-index: 5;
+  z-index: 100;
 }
 
 @media (max-width: 1000px) {
   .hero-section-nav {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    top: 75px;
+    background-color: rgba(80, 118, 145, 0.55);
+    z-index: 100;
+    align-items: flex-start;
   }
-
   .menu-toggle {
     display: inline-block;
     width: 36px;
     height: 50px;
   }
-
   .menu-open .hero-section-nav {
     display: block;
   }
-
   .menu-open .hs-nav-dropdown {
     display: block;
   }
   .hs-getintouch-button {
-    display: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #df6951;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 20px 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    line-height: 21px;
+    margin: 0;
+  }
+  .hero-section-contents {
+    margin-top: 100px;
+  }
+  .hs-nav-dropdown {
+    overflow: hidden;
+    height: 25px;
+  }
+  .hs-nav-dropdown:hover {
+    height: fit-content;
+  }
+  .hs-nav-dropdown-img {
+    display: none !important;
+  }
+  .hs-nav-dropdown-text {
+    display: inline-block;
+    position: static;
+    padding-left: 15px;
+  }
+  .hs-nav-dropdown-text li:hover {
+    border-bottom: 1px solid #df6951;
+    padding-bottom: 2px;
+  }
+  .hs-nav-dropdown-text a {
+    position: static;
   }
 }
