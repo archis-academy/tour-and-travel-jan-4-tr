@@ -575,46 +575,53 @@ hr {
 .trending-tour-packeges-title {
   text-align: center;
   margin: 0 auto;
-  width: 639px;
-  height: 171px;
 }
 .tt-subtitle {
-  font-family: Poppins;
-  font-size: 18px;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
-  line-height: 27px;
   color: #df6951;
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: clamp(20px, 2vw, 27px);
 }
 .tt-title {
   margin-top: 10px;
-  font-family: Volkhov;
-  font-size: 50px;
+  font-family: "Volkhov", serif;
   font-weight: 700;
-  line-height: 71.04px;
   text-align: center;
+  font-size: clamp(25px, 4vw, 50px);
+  line-height: clamp(30px, 4vw, 71.04px);
 }
 .tt-countrys {
-  width: 1381px;
-  height: 696.13px;
   margin: 30px auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 .tt-countrys-details {
   margin: 5px 50px;
+  max-width: 395px;
+}
+
+.tour-images {
+  position: relative;
 }
 
 .tour-img {
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 .contry-flag {
-  margin-top: -60px;
-  margin-right: 250px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100px;
 }
+
 .tour-days-people {
   display: flex;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 16.81px;
   font-weight: 400;
   line-height: 25.21px;
@@ -695,8 +702,7 @@ hr {
 }
 .tour-info {
   margin-top: 10px;
-
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 12.22px;
   font-weight: 400;
   line-height: 24.45px;
@@ -716,9 +722,15 @@ hr {
 }
 
 .city-name {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 29.03px;
   font-weight: 700;
   line-height: 43.55px;
   text-align: center;
+}
+
+@media (max-width: 1420px) {
+  .tt-countrys {
+    flex-wrap: wrap;
+  }
 }
