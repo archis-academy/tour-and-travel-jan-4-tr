@@ -11,6 +11,7 @@ function toggleBtn() {
     document.body.style.overflow = "hidden";
     isOpen = !isOpen;
   } else {
+    console.log("test");
     navbarMenu.style.display = "none";
     mainContent.style.display = "inline-block";
     navbarButton.style.display = "none";

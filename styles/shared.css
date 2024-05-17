@@ -18,6 +18,7 @@ a {
   justify-content: space-between;
   font-size: 19px;
   color: white;
+  gap: 50px;
   padding-top: 30px;
   align-items: center;
 }
@@ -30,16 +31,19 @@ a {
   font-family: "Poppins", sans-serif;
   color: white;
   padding: 20px 30px;
-  margin-top: 5px;
   cursor: pointer;
   line-height: 21px;
-  margin-left: 100px;
 }
-
+.hero-section-nav-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 950px;
+  flex: 1;
+  align-items: center;
+}
 .hero-section-nav {
   display: flex;
   gap: 35px;
-  padding: 15px 50px;
   align-items: center;
 }
 
@@ -81,16 +85,23 @@ a {
 }
 
 @media (max-width: 1000px) {
-  .hero-section-nav {
+  .hero-section-nav-box {
     display: none;
     flex-direction: column;
+    gap: 35px;
+    justify-content: start;
     position: absolute;
+    padding: 20px 35px;
     right: 0;
+    align-items: flex-start;
     width: 100%;
     height: 100vh;
     top: 75px;
     background-color: rgba(80, 118, 145, 0.55);
     z-index: 100;
+  }
+  .hero-section-nav {
+    flex-direction: column;
     align-items: flex-start;
   }
   .menu-toggle {
