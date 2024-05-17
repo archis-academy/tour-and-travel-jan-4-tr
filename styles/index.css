@@ -1,19 +1,34 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .homepage-hero-section-container {
   background-image: url(/images/homepage-background.png);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   position: relative;
   display: flex;
   justify-content: center;
   overflow: hidden;
   height: 100vh;
+  width: 100%;
   padding: 0 20px;
+  z-index: 0;
+}
+
+.homepage-hero-section-box {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  max-width: 1350px;
+  flex: 1;
+}
+
+.hero-section-contents {
+  margin-top: 150px;
+  max-width: 800px;
+}
+
+.hero-section-contents h1 {
+  max-width: 630px;
+  font-size: clamp(30px, 9vw, 58px);
+  line-height: clamp(40px, 9vw, 67px);
+  margin-bottom: 30px;
 }
 
 .hs-travel-form {
@@ -22,14 +37,16 @@
   align-items: center;
   background-color: #f3f3f395;
   backdrop-filter: blur(8px);
-  padding: 30px 0;
+  padding: 30px 20px;
   border-radius: 5px;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 .hs-form-datalist {
   all: unset;
   width: 150px;
-  padding-left: 40px;
+  padding-left: 5px;
 }
 
 .hs-form-datalist::placeholder {
@@ -86,14 +103,64 @@
 
 .hs-scroll-img {
   position: absolute;
-  bottom: -20%;
+  bottom: 0;
   left: 20px;
+  z-index: -1;
+  transform: translateY(50%);
 }
 
 .hs-pageline-img {
   position: absolute;
   height: 3px;
   bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+  .homepage-hero-section-container {
+    position: relative;
+  }
+}
+@media (max-width: 685px) {
+  .line-img {
+    display: none;
+  }
+
+  .hs-travel-form {
+    flex-direction: column;
+    align-items: start;
+  }
+  .hs-pageline-img {
+    display: none;
+  }
+  .angle-down-typ {
+    position: absolute;
+    margin-top: 43px;
+    margin-left: 90px;
+  }
+  .angle-down-duration {
+    position: absolute;
+    margin-bottom: 70px;
+    margin-left: 115px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hs-scroll-img {
+    width: 260px;
+  }
+}
+
+@media (max-width: 827px) {
+  .hs-submit-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 630px) {
+  .hs-client-images-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .partners-section {
