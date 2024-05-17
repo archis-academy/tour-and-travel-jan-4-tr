@@ -1,20 +1,32 @@
+function openPage(elmnt, color) {
+  var infoNavBtn, i;
+
+  // Remove active class from all buttons
+  infoNavBtn = document.getElementsByClassName("info-nav-btn");
+  for (i = 0; i < infoNavBtn.length; i++) {
+    infoNavBtn[i].style.backgroundColor = "";
+  }
+
+  // Set background color of the clicked button
+  elmnt.style.backgroundColor = color;
+}
+
+// Click the default button when the page loads
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("default-open").click();
+});
+
 const navbarMenu = document.querySelector("#section-nav");
-const mainContent = document.querySelector(".hero-section-contents");
-const navbarButton = document.querySelector(".hs-getintouch-button");
 
 let isOpen = open;
 function toggleBtn() {
   if (isOpen) {
     navbarMenu.style.display = "flex";
-    mainContent.style.display = "none";
-    navbarButton.style.display = "inline-block";
     document.body.style.overflow = "hidden";
     isOpen = !isOpen;
   } else {
     console.log("test");
     navbarMenu.style.display = "none";
-    mainContent.style.display = "inline-block";
-    navbarButton.style.display = "none";
     document.body.style.overflow = "auto";
     isOpen = !isOpen;
   }
@@ -27,13 +39,10 @@ function handleResize() {
 
   if (width > 1000) {
     navbarMenu.style.display = "flex";
-    navbarButton.style.display = "inline-block";
     document.body.style.overflow = "auto";
     isOpen = open;
   } else {
     navbarMenu.style.display = "none";
-    mainContent.style.display = "inline-block";
-    navbarButton.style.display = "none";
     document.body.style.overflow = "auto";
     isOpen = close;
   }
