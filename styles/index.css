@@ -634,3 +634,169 @@ hr {
   justify-content: flex-end;
   padding: 10px 0;
 }
+
+.homepage-trending-tour-packages {
+  margin-top: 100px;
+  padding: 0 20px;
+}
+.trending-tour-packeges-title {
+  text-align: center;
+  margin: 0 auto;
+}
+.tt-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #df6951;
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: clamp(20px, 2vw, 27px);
+}
+.tt-title {
+  margin-top: 10px;
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: clamp(25px, 4vw, 50px);
+  line-height: clamp(30px, 4vw, 71.04px);
+}
+.tt-countrys {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.tt-countrys-details {
+  max-width: 395px;
+}
+
+.tour-images {
+  position: relative;
+}
+
+.tour-img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.contry-flag {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+}
+
+.tour-days-people {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 16.81px;
+  font-weight: 400;
+  line-height: 25.21px;
+  text-align: center;
+  color: #7d7d7d;
+  margin-top: -20px;
+}
+.calender-icon {
+  width: 24px;
+  height: 24px;
+}
+.stay-days {
+  margin-left: 10px;
+}
+.people-icon {
+  margin-left: 50px;
+  width: 20px;
+  height: 20px;
+}
+.people-going {
+  margin-left: 10px;
+}
+.city-name-rating {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.star-icon-list {
+  width: 92px;
+  height: 16px;
+  margin-top: 15px;
+  float: right;
+}
+
+.star-icon {
+  float: right;
+  width: 16px;
+  height: 16px;
+  padding: 0.5px 0px 0.5px 0px;
+}
+.country-location {
+  display: flex;
+  margin-top: 5px;
+}
+.location-icon {
+  width: 27.5px;
+  height: 27.5px;
+}
+.contry-name {
+  font-family: Poppins;
+  font-size: 16.81px;
+  font-weight: 400;
+  line-height: 25.21px;
+  color: #7d7d7d;
+  margin-left: 10px;
+}
+.tour-price {
+  display: flex;
+  margin-top: 5px;
+}
+.new-price {
+  font-family: Poppins;
+  font-size: 29.03px;
+  font-weight: 500;
+  line-height: 43.55px;
+  color: #df6951;
+}
+.old-price {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  text-decoration: line-through;
+  color: #7d7d7d;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.tour-info {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12.22px;
+  font-weight: 400;
+  line-height: 24.45px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #000000;
+}
+.tour-explore-button {
+  padding: 10px 27.94px;
+  border-radius: 7.64px;
+  background: #df6951;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  border-style: none;
+  font-weight: 400;
+}
+
+.city-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 29.03px;
+  font-weight: 700;
+  line-height: 43.55px;
+  text-align: center;
+}
+
+@media (max-width: 1420px) {
+  .tt-countrys {
+    flex-wrap: wrap;
+  }
+}
