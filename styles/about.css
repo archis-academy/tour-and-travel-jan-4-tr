@@ -398,7 +398,7 @@ footer {
   opacity: 50%;
 }
 
-hr {
+.footer-hr {
   max-width: 1200px;
   height: 2px;
   background: #e5e5ea;
