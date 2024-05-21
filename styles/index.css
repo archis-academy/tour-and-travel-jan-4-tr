@@ -572,3 +572,100 @@ hr {
   justify-content: flex-end;
   padding: 10px 0;
 }
+
+
+.homepage-testimonials {
+  background-color: #f8f8f8;
+  margin-top: 75px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: -2;
+}
+.ts-seashell-img {
+  position: absolute;
+  top: -13%;
+  left: 5%;
+  z-index: -1;
+}
+.ts-hat-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+}
+.ts-photo-img {
+  position: absolute;
+  top: -13%;
+  right: 5%;
+  z-index: -1;
+}
+.ts-content {
+  max-width: 640px;
+
+}
+.ts-content-h5 {
+  font-family: "Poppins", serif;
+  color: #DF6951;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+}
+.ts-content-h1 {
+  font-family: "Volkhov", sans-serif;
+  color: #181E4B;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 71px;
+  text-align: center;
+
+}
+.ts-content-comment {
+  position: relative;
+  background-color: white;
+  max-width: 545px;
+  border-radius: 17px;
+  padding: 70px 95px 30px;
+  margin: 75px auto;
+}
+.ts-quotes-img {
+  position: absolute;
+  top: 13%;
+  left: 13%;
+  
+}
+.ts-pp-img {
+  position: absolute;
+  top: -30%;
+  left: 35%
+}
+.ts-left-icon {
+  position: absolute;
+  left: -12%;
+}
+.ts-right-icon {
+  position: absolute;
+  right: -12%;
+}
+.ts-content-comment-text {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+}
+.ts-content-comment-name {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+  
+}
+.ts-pagination-img {
+  position: absolute;
+  bottom: -10%;
+  left: 35%;
+}
