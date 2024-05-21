@@ -64,31 +64,34 @@
       </div>
     </div>
     <div class="packages-main-content">
+      <!-- Nav Section Start -->
       <div class="main-content-nav">
         <button
           class="info-nav-btn"
-          onclick="openPage(this, 'white')"
+          onclick="openPage('Information', this, 'white')"
           id="default-open"
         >
           <img src="images/location/location-info-logo.png" />
           Information
         </button>
-        <button class="info-nav-btn" onclick="openPage(this, 'white')">
+        <button class="info-nav-btn" onclick="openPage('TourPlan', this, 'white')">
           <img src="images/location/locations_calender-logo.png" />
           Tour Plan
         </button>
-        <button class="info-nav-btn" onclick="openPage(this, 'white')">
+        <button class="info-nav-btn" onclick="openPage('Location', this, 'white')">
           <img src="images/location/icons_location.png" />
           Location
         </button>
-        <button class="info-nav-btn" onclick="openPage(this, 'white')">
+        <button class="info-nav-btn" onclick="openPage('Gallery', this, 'white')">
           <img src="images/location/location-gallery-logo.png" />
           Gallery
         </button>
       </div>
+      <!-- Nav Section End -->
       <div class="main-content-body">
-        <div class="main-content-body-left">
-          <div class="main-content-info">
+        <!-- Information Page Start -->
+        <div id="Information" class="main-content-information page-content">
+          <div class="main-content-inform">
             <div class="content-head">
               <div class="content-head-upper">
                 <div>
@@ -210,7 +213,14 @@
             </div>
           </div>
         </div>
-        <div class="main-content-body-right">
+        <!-- Information Page End -->
+        <!-- Tour Plan Page Start -->
+        <div id="TourPlan" class="main-content-tourplan page-content">
+          <p>sşodgnasşdkgnlsdlfmsdlgj</p>
+        </div>
+        <!-- Tour Plan Page End -->
+        <!-- Booking Section Start -->
+        <div class="main-content-book">
           <div class="main-content-form">
             <div class="form-head">
               <h1>Book This Tour</h1>
@@ -299,6 +309,7 @@
             <img src="images/location/tour-location-img001.png" alt="plane" />
           </div>
         </div>
+        <!-- Booking Section End -->
       </div>
     </div>
     <footer>

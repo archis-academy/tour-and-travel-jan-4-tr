@@ -1,5 +1,5 @@
-function openPage(elmnt, color) {
-  var infoNavBtn, i;
+function openPage(pageName, elmnt, color) {
+  var infoNavBtn, pageContent, i;
 
   // Remove active class from all buttons
   infoNavBtn = document.getElementsByClassName("info-nav-btn");
@@ -9,6 +9,15 @@ function openPage(elmnt, color) {
 
   // Set background color of the clicked button
   elmnt.style.backgroundColor = color;
+
+  // Hide all page contents
+  pageContent = document.getElementsByClassName("page-content");
+  for (i = 0; i < pageContent.length; i++) {
+      pageContent[i].style.display = "none";
+  }
+
+  // Show the content of the selected page
+  document.getElementById(pageName).style.display = "block";
 }
 
 // Click the default button when the page loads

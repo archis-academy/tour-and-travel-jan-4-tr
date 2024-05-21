@@ -1,3 +1,4 @@
+/* Header Section Start */
 .packages-hero-section-container {
   background-image: url(/images/location/tour-location-homepage.png);
   display: flex;
@@ -38,6 +39,7 @@
   font-size: clamp(50px, 10vw, 157px);
   line-height: clamp(40px, 6px, 223);
 }
+/* Header Section End */
 
 .packages-main-content {
   max-width: 1328px !important;
@@ -46,6 +48,7 @@
   box-shadow: 1px 1px 10px 10px lightgray;
 }
 
+/* Nav Section Start */
 .main-content-nav {
   display: flex;
   justify-content: space-around;
@@ -74,6 +77,7 @@
 .info-nav-btn:hover {
   background-color: #d3d3d3;
 }
+/* Nav Section End */
 
 .main-content-body {
   max-width: 1328px;
@@ -81,14 +85,15 @@
   flex-wrap: wrap;
 }
 
-.main-content-body-left {
+/* Information Page Start */
+.main-content-information {
   width: 60%;
   display: flex;
   padding: 15px 0;
   flex-direction: column;
 }
 
-.main-content-info {
+.main-content-inform {
   padding: 25px 0;
   margin: 0 25px;
 }
@@ -262,8 +267,10 @@ p {
   width: 100%;
   border-radius: 5%;
 }
+/* Information Page End */
 
-.main-content-body-right {
+/* Booking Section Start */
+.main-content-book {
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -372,7 +379,9 @@ textarea:focus::placeholder {
   right: 0;
   left: -60px;
 }
+/* Booking Section End */
 
+/* Footer Start */
 footer {
   position: relative;
   padding: 0 20px;
@@ -493,6 +502,7 @@ hr {
   letter-spacing: -0.32px;
   color: #181433;
 }
+/* Footer End */
 
 @media screen and (max-width: 800px) {
   .main-content-body-left {
