@@ -10,8 +10,9 @@
   padding: 0 20px;
 }
 
-.homepage-hero-section-box {
+.packages-hero-section-box {
   flex: 1;
+  max-width: 1350px;
 }
 
 .nav-a {
