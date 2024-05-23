@@ -50,3 +50,7 @@ function handleResize() {
 
 window.addEventListener("resize", handleResize);
 handleResize();
+
+function redirectToPage() {
+  window.location.href = "location.html";
+}

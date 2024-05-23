@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="styles/shared.css" />
     <link rel="stylesheet" href="styles/packages.css" />
+    <link rel="stylesheet" href="styles/location.css" />
+    <link rel="stylesheet" href="location.js" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
@@ -65,11 +67,7 @@
     </div>
     <div class="packages-main-content">
       <div class="main-content-nav">
-        <button
-          class="info-nav-btn"
-          onclick="openPage(this, 'white')"
-          id="default-open"
-        >
+        <button class="info-nav-btn" onclick="redirectToPage(this, 'white')">
           <img src="images/location/location-info-logo.png" />
           Information
         </button>
@@ -77,7 +75,11 @@
           <img src="images/location/locations_calender-logo.png" />
           Tour Plan
         </button>
-        <button class="info-nav-btn" onclick="redirectToPage()(this, 'white')">
+        <button
+          class="info-nav-btn"
+          onclick="openPage(this, 'white')"
+          id="default-open"
+        >
           <img src="images/location/icons_location.png" />
           Location
         </button>
@@ -88,126 +90,51 @@
       </div>
       <div class="main-content-body">
         <div class="main-content-body-left">
-          <div class="main-content-info">
-            <div class="content-head">
-              <div class="content-head-upper">
-                <div>
-                  <h3 class="country">Switzerland</h3>
+          <div class="location-box">
+            <h3 class="location-box-h3">Tour Plan</h3>
+            <p class="location-box-p">
+              Qui tempore voluptate qui quia commodi rem praesentium alias et
+              voluptates officia sed molestiae sint et voluptas quos. Qui harum
+              repudiandae galisum dolorem Hic deleniti officiis est sapiente
+              explicabo non eaque corporis aut voluptatum iusto At facere enim
+              id voluptas reprehenderit. Ut voluptas laudantium
+            </p>
+            <div class="location-gps">
+              <div style="height: 100%">
+                <div
+                  id="embed-map-display"
+                  style="height: 100%; width: 100%; max-width: 100%"
+                >
+                  <iframe
+                    style="height: 100%; width: 100%; border: 0"
+                    frameborder="0"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35209.160624674536!2d34.051185646623345!3d38.73893717988009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1716228118468!5m2!1str!2str"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  >
+                  </iframe>
                 </div>
-                <div class="per-capita">
-                  <h3 class="price">1,000$</h3>
-                  <h3 class="slash">/</h3>
-                  <h3 class="per-couple">PerCouple</h3>
-                </div>
-              </div>
-              <div class="content-head-lower">
-                <div>
-                  <img src="images/hometour-packages-star-img.png" />
-                  <img src="images/hometour-packages-star-img.png" />
-                  <img src="images/hometour-packages-star-img.png" />
-                  <img src="images/hometour-packages-star-img.png" />
-                  <img src="images/hometour-packages-star-img.png" />
-                </div>
-                <h4 class="review">(2.3k review)</h4>
+                >
               </div>
             </div>
-            <div>
-              <p>
-                Ex optio sequi et quos praesentium in nostrum labore nam rerum
-                iusto aut magni nesciunt? Quo quidem neque iste expedita est
-                dolor similique ut quasi maxime ut deserunt autem At praesentium
-                voluptatem aut libero nisi. Et eligendi sint ab cumque veritatis
-                aut provident aliquam. Aut aspernatur consequuntur eum quaerat
-                distinctio ut inventore aliquid et quasi alias ut rerum suscipit
-                et nihil deleniti. Ex optio sequi et quos praesentium in nostrum
-                labore nam rerum iusto aut magni nesciunt? Quo quidem neque iste
-                expedita est dolor similique ut quasi maxime ut deserunt autem
-                At praesentium voluptatem aut libero nisi. Et eligendi sint ab
-                cumque veritatis aut provident aliquam. Aut aspernatur
-                consequuntur eum quaerat distinctio ut inventore aliquid et
-                quasi alias ut rerum suscipit et nihil deleniti.
-              </p>
-            </div>
-            <div class="flight-info">
-              <div class="flight-sub-info">
-                <h3>Destination</h3>
-                <h4>: Zurich, Switzerland</h4>
-              </div>
-              <div class="flight-sub-info">
-                <h3>Departure</h3>
-                <h4>: Main Square, New City</h4>
-              </div>
-              <div class="flight-sub-info">
-                <h3>Departure Time</h3>
-                <h4>: Approximately 08:10 AM</h4>
-              </div>
-              <div class="flight-sub-info">
-                <h3>Return Time</h3>
-                <h4>: Approximately 07:20 PM</h4>
-              </div>
-              <div class="flight-sub-info">
-                <h3>Dress Code</h3>
-                <h4>: Casual, comfortable and light</h4>
-              </div>
-              <div class="flight-sub-info">
-                <h3>Not Included</h3>
-                <div class="answer-div">
-                  <h4>
-                    <img src="images/location/charm_circle-cross.png" />Gallery
-                    Ticket
-                  </h4>
-                  <h4>
-                    <img src="images/location/charm_circle-cross.png" />Lunch
-                  </h4>
-                </div>
-              </div>
-              <div class="flight-sub-info">
-                <h3>Included</h3>
-                <div class="answer-div">
-                  <h4>
-                    <img src="images/location/charm_circle-cross-1.png" />5 Star
-                    Accomodations
-                  </h4>
-                  <h4>
-                    <img
-                      src="images/location/charm_circle-cross-1.png"
-                    />Airport Transfer
-                  </h4>
-                </div>
-              </div>
-              <div class="flight-sub-info-answer">
-                <h4>
-                  <img
-                    src="images/location/charm_circle-cross-1.png"
-                  />Breakfast
-                </h4>
-                <h4>
-                  <img src="images/location/charm_circle-cross-1.png" />Personal
-                  Guide
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="main-content-gallery">
-            <div class="main-content-gallery-grid">
-              <div class="gallery-head">
-                <h1 class="h1-gallery">From Our Gallery</h1>
-                <p>
-                  Ex optio sequi et quos praesentium in nostrum labore nam rerum
-                  iusto aut magni nesciunt? Quo quidem neque iste expedita est
-                  dolor similique ut quasi maxime ut deserunt autem At
-                  praesentium voluptatem aut libero nisi.
-                </p>
-              </div>
-              <div class="gallery-body">
-                <img src="images/location/Rectangle1.png" />
-                <img src="images/location/Rectangle2.png" />
-                <img src="images/location/Rectangle3.png" />
-                <img src="images/location/Rectangle4.png" />
-                <img src="images/location/Rectangle5.png" />
-                <img src="images/location/Rectangle6.png" />
-              </div>
-            </div>
+            <p class="location-box-p">
+              Sit quasi soluta non temporibus voluptas non necessitatibus
+              tempore sit deleniti praesentium aut velit nostrum ut itaque atque
+              ad expedita veniam. Hic deleniti officiis est sapiente explicabo
+              non eaque corporis aut voluptatum iusto At facere enim id voluptas
+              reprehenderit. Ut voluptas laudantium et molestias voluptatem ex
+              doloremque omnis est ipsum nihil. <br /><br />
+              Quo facere eveniet 33 sint rerum est internos impedit sed
+              dignissimos quia. Et rerum deleniti et voluptates saepe qui labore
+              quisquam non accusantium temporibus. Quo velit numquam hic
+              excepturi sequi sed dicta doloribus! In quos possimus quo
+              quibusdam aliquid est culpa porro sed molestiae libero At
+              blanditiis minima a reiciendis fugiat.
+            </p>
           </div>
         </div>
         <div class="main-content-body-right">
