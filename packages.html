@@ -65,7 +65,7 @@
     </div>
     <div class="packages-main-content">
       <div class="main-content-nav">
-        <button
+        <button 
           class="info-nav-btn"
           onclick="openPage(this, 'white')"
           id="default-open"
@@ -81,14 +81,52 @@
           <img src="images/location/icons_location.png" />
           Location
         </button>
-        <button class="info-nav-btn" onclick="openPage(this, 'white')">
+        <button class="info-nav-btn" onclick="openPage(this, 'white')" id="galleryLink">
           <img src="images/location/location-gallery-logo.png" />
           Gallery
         </button>
       </div>
       <div class="main-content-body">
         <div class="main-content-body-left">
-          <div class="main-content-info">
+      <!--start trip image gallery-->
+
+          <div class="trip-image-gallery-body hidden" id="gallery">
+            <div class="trip-image-gallery-container">
+    
+                <div class="gallery-item">
+                    <img src="images/packages/Rectangle 19321.png" alt="picture1">
+                </div>
+    
+                <div class="gallery-item tall">
+                    <img src="images/packages/Rectangle 19321-6.png" alt="picture2">
+                </div>
+    
+                <div class="gallery-item">
+                    <img src="images/packages/Rectangle 19321-1.png" alt="picture3">
+                </div>
+    
+                <div class="gallery-item">
+                    <img src="images/packages/Rectangle 19321-2.png" alt="picture4">
+                </div>
+    
+                <div class="gallery-item large">
+                    <img src="images/packages/Rectangle 19321-4.png" alt="picture5" class="picture5">
+                </div>
+    
+                <div class="gallery-item">
+                    <img src="images/packages/Rectangle 19321-3.png" alt="picture6">
+                </div>
+    
+                <div class="gallery-item wide">
+                    <img src="images/packages/Rectangle 19321-5.png" alt="picture7">
+                </div>
+            </div>
+    
+        </div>
+
+<!--end trip image gallery-->
+
+          <div class="main-content-info" id="information">
             <div class="content-head">
               <div class="content-head-upper">
                 <div>
@@ -188,7 +226,7 @@
               </div>
             </div>
           </div>
-          <div class="main-content-gallery">
+          <div class="main-content-gallery" >
             <div class="main-content-gallery-grid">
               <div class="gallery-head">
                 <h1 class="h1-gallery">From Our Gallery</h1>
@@ -362,5 +400,6 @@
     </footer>
 
     <script src="packages.js"></script>
+    <script src="gallery.js"></script>
   </body>
 </html>
