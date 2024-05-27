@@ -300,6 +300,24 @@ p {
 
 .step {
   display: flex;
+  position: relative;
+  min-height: 320px;
+}
+
+.step::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: calc(100% + 10px);
+  left: 22px;
+  background-color: #DF6951;
+  opacity: 0.5;
+}
+
+.step2 {
+  display: flex;
+  position: relative;
 }
 
 .step-serial {
@@ -322,13 +340,7 @@ p {
   font-weight: 700;
   padding: 10px 15px;
   width: 48px;
-}
-
-.tourplan-hr {
-  border-left: 1px dashed #DF6951;
-  height: 250px;
-  border-width: 1px;
-  width: 1%;
+  letter-spacing: 4px;
 }
 
 .step-info {
@@ -619,11 +631,12 @@ footer {
   }
   .step {
     flex-wrap: wrap;
+    min-height: fit-content;
   }
   .step-info {
     padding: 0;
   }
-  .tourplan-hr {
+  .step::before {
     display: none;
   }
 }
