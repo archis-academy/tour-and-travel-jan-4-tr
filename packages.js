@@ -50,3 +50,18 @@ function handleResize() {
 
 window.addEventListener("resize", handleResize);
 handleResize();
+
+//trip-image-gallery
+document.getElementById('galleryLink').addEventListener('click', ()=>{
+  showSection('gallery');
+});
+  document.getElementById('default-open').addEventListener('click', ()=>{
+      showSection('information');
+});
+
+function showSection(sectionId) {
+  document.getElementById('gallery').classList.add('hidden');
+  document.getElementById('information').classList.add('hidden');   
+  document.getElementById(sectionId).classList.remove('hidden');
+}
+
