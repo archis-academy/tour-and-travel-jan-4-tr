@@ -1,27 +1,41 @@
-function openPage(pageName, elmnt, color) {
-  var infoNavBtn, pageContent, i;
+const navbarPackages = document.getElementsByClassName("nav-button")
+const pageContent = document.getElementsByClassName("page-content")
 
-  // Remove active class from all buttons
-  infoNavBtn = document.getElementsByClassName("info-nav-btn");
-  for (i = 0; i < infoNavBtn.length; i++) {
-    infoNavBtn[i].style.backgroundColor = "";
-  }
-
-  // Set background color of the clicked button
-  elmnt.style.backgroundColor = color;
-
-  // Hide all page contents
-  pageContent = document.getElementsByClassName("page-content");
-  for (i = 0; i < pageContent.length; i++) {
+function showContent(pageId) {
+  for (let i = 0; i < pageContent.length; i++) {
+    if (pageContent[i].id === pageId) {
+      pageContent[i].style.display = "block";
+    } else {
       pageContent[i].style.display = "none";
+    }
   }
-
-  // Show the content of the selected page
-  document.getElementById(pageName).style.display = "block";
 }
 
-// Click the default button when the page loads
-document.addEventListener("DOMContentLoaded", function () {
+for (let i = 0; i < navbarPackages.length; i++) {
+  navbarPackages[i].addEventListener("click", function() {
+    const pageId = this.getAttribute("data-page");
+    showContent(pageId);
+  });
+}
+
+function addClass(active) {
+  for (let i = 0; i < navbarPackages.length; i++) {
+    if (navbarPackages[i] === active) {
+      navbarPackages[i].classList.add("active-btn");
+    } else {
+      navbarPackages[i].classList.remove("active-btn");
+    }
+  }
+}
+
+for (let i = 0; i < navbarPackages.length; i++) {
+  navbarPackages[i].addEventListener("click", function() {
+    const active = this.classList.contains("active-btn");
+    addClass(active);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("default-open").click();
 });
 

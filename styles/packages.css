@@ -367,6 +367,11 @@ p {
   line-height: clamp(14px, 4vw, 24px);
   padding: 5px 0;
 }
+/* Tour Plan Page End */
+
+.active-btn {
+  background-color: #ffffff;
+}
 
 /* Booking Section Start */
 .main-content-book {
