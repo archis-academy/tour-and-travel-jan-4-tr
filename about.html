@@ -21,39 +21,43 @@
   </head>
   <body>
     <div class="about-nav-conteiner">
-      <div class="homepage-hero-section-box">
+      <div class="about-hero-section-box">
         <nav class="hero-section-header">
           <img
             class="hero-section-travel-logo"
             src="/images/logo.png"
             alt="travel-logo"
           />
-          <div class="menu-toggle">
+          <div onclick="toggleBtn()" class="menu-toggle">
             <img src="/images/hamburger-icon.png" alt="hamburger-img" />
           </div>
-          <ul class="hero-section-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <div class="hs-nav-dropdown">
-              <li><a href="#">Services</a> <i class="fa fa-caret-down"></i></li>
-              <img
-                class="hs-nav-dropdown-img"
-                src="images/popup-cloud.png"
-                alt=""
-              />
-              <ul class="hs-nav-dropdown-text">
-                <li><a href="#">Honeymoon Packages</a></li>
-                <li><a href="#">Tours Packages</a></li>
-                <li><a href="#">Musical Events</a></li>
-                <li><a href="#">Build Package</a></li>
-              </ul>
-            </div>
-            <li><a href="packages.html">Upcomming Packages</a></li>
-          </ul>
-          <button class="hs-getintouch-button">Get in Touch</button>
+          <div class="hero-section-nav-box" id="section-nav">
+            <ul class="hero-section-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <div class="hs-nav-dropdown">
+                <li>
+                  <a href="#">Services</a> <i class="fa fa-caret-down"></i>
+                </li>
+                <img
+                  class="hs-nav-dropdown-img"
+                  src="images/popup-cloud.png"
+                  alt=""
+                />
+                <ul class="hs-nav-dropdown-text">
+                  <li><a href="#">Honeymoon Packages</a></li>
+                  <li><a href="#">Tours Packages</a></li>
+                  <li><a href="#">Musical Events</a></li>
+                  <li><a class="Build-title" href="#">Build Package</a></li>
+                </ul>
+              </div>
+              <li><a href="packages.html">Upcomming Packages</a></li>
+            </ul>
+            <button class="hs-getintouch-button">Get in Touch</button>
+          </div>
         </nav>
         <div class="about-nav-title-subtitle">
-          <h2 class="nav-title">READ</h2>
+          <h2 class="nav-title">Read</h2>
           <h1 class="nav-subtitle">About Us</h1>
         </div>
       </div>
@@ -228,11 +232,11 @@
         </div>
         <div class="explore-packages-img">
           <img
-            src="images/about/about-city-img-switzerland.png"
+            src="images/about/about-city-img-india.png"
             alt="switzerland-2"
           />
           <div class="img-overlay">
-            <h4 class="text-1">Switzerland</h4>
+            <h4 class="text-1">India</h4>
             <h4 class="text-2">$840</h4>
           </div>
         </div>
@@ -265,15 +269,75 @@
         </div>
         <div class="explore-packages-img">
           <img
-            src="images/about/about-city-img-losangelas.png"
+            src="images/about/about-city-img-pakistan.png"
             alt="losangelas-2"
           />
           <div class="img-overlay">
-            <h4 class="text-1">Los Angelas</h4>
+            <h4 class="text-1">Pakistan</h4>
             <h4 class="text-2">$840</h4>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="mountain-img">
+        <img class="mountain-png" src="images/mountain.png" alt="mountain" />
+      </div>
+      <div class="homepage-footer-container">
+        <div class="homepage-footer">
+          <div class="footer-travel">
+            <img
+              class="footer-logo"
+              src="images/travel-logo.png"
+              alt="travl-logo"
+            />
+            <p class="footer-prg">
+              Travel helps companies <br />
+              manage payments easily.
+            </p>
+            <i class="fa-brands fa-linkedin-in" id="footer-icons"></i>
+            <i class="fa-brands fa-twitter" id="footer-icons"></i>
+            <i class="fa-brands fa-facebook-messenger" id="footer-icons"></i>
+            <i class="fa-solid fa-infinity" id="footer-icons"></i>
+          </div>
+          <div class="footer-comp">
+            <h3 class="footer-subtitle">Company</h3>
+            <ul class="comp-ul">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="footer-des">
+            <h3 class="footer-subtitle">Destinations</h3>
+            <ul class="des-ul">
+              <li><a href="#">Maldives</a></li>
+              <li><a href="#">Los Angeles</a></li>
+              <li><a href="#">Las Vegas</a></li>
+              <li><a href="#">Torronto</a></li>
+            </ul>
+          </div>
+          <div class="footer-join">
+            <h3 class="footer-subtitle">Join Our Newsletter</h3>
+            <div class="footer-input-button">
+              <input
+                class="footer-input"
+                type="text"
+                placeholder="Your Email Address"
+              />
+              <button class="footer-button">Subscribe</button>
+            </div>
+            <p class="footer-join-text">
+              * Will send you weekly updates for your better <br />
+              tour packages
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-hr"/>
+      <p class="footer-alt">Copyright @ Xpro 2022. All Rights Reserved.</p>
+    </footer>
+    <script src="packages.js"></script>
   </body>
 </html>

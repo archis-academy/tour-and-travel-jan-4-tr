@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="packages-hero-section-container">
-      <div class="homepage-hero-section-box">
+      <div class="packages-hero-section-box">
         <nav class="hero-section-header">
           <img
             class="hero-section-travel-logo"
@@ -34,8 +34,8 @@
           </div>
           <div class="hero-section-nav-box" id="section-nav">
             <ul class="hero-section-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
               <div class="hs-nav-dropdown">
                 <li>
                   <a href="#">Services</a> <i class="fa fa-caret-down"></i>
@@ -52,7 +52,7 @@
                   <li><a class="Build-title" href="#">Build Package</a></li>
                 </ul>
               </div>
-              <li><a href="packages.html">Upcomming Packages</a></li>
+              <li><a href="#">Upcomming Packages</a></li>
             </ul>
             <button class="hs-getintouch-button">Get in Touch</button>
           </div>
@@ -64,31 +64,30 @@
       </div>
     </div>
     <div class="packages-main-content">
+      <!-- Nav Section Start -->
       <div class="main-content-nav">
-        <button
-          class="info-nav-btn"
-          onclick="openPage(this, 'white')"
-          id="default-open"
-        >
+        <button class="info-nav-btn nav-button" data-page="Information" id="default-open">
           <img src="images/location/location-info-logo.png" />
           Information
         </button>
-        <button class="info-nav-btn" onclick="openPage(this, 'white')">
+        <button class="info-nav-btn nav-button" data-page="TourPlan">
           <img src="images/location/locations_calender-logo.png" />
           Tour Plan
         </button>
-        <button class="info-nav-btn" onclick="openPage(this, 'white')">
+        <button class="info-nav-btn nav-button" data-page="Location">
           <img src="images/location/icons_location.png" />
           Location
         </button>
-        <button class="info-nav-btn" onclick="openPage(this, 'white')">
+        <button class="info-nav-btn nav-button" data-page="Gallery">
           <img src="images/location/location-gallery-logo.png" />
           Gallery
         </button>
       </div>
+      <!-- Nav Section End -->
       <div class="main-content-body">
-        <div class="main-content-body-left">
-          <div class="main-content-info">
+        <!-- Information Page Start -->
+        <div id="Information" class="main-content-information page-content">
+          <div class="main-content-inform">
             <div class="content-head">
               <div class="content-head-upper">
                 <div>
@@ -210,7 +209,91 @@
             </div>
           </div>
         </div>
-        <div class="main-content-body-right">
+        <!-- Information Page End -->
+        <!-- Tour Plan Page Start -->
+        <div id="TourPlan" class="main-content-tourplan page-content">
+          <div class="tourplan-head">
+            <h1>Tour Plan</h1>
+          </div>
+          <div class="tourplan-steps">
+            <div class="step">
+              <div class="step-serial">
+                <div class="step-number">01</div>
+              </div>
+              <div class="step-info">
+                <h2>Day 1: Departure</h2>
+                <p>Qui tempore voluptate qui quia commodi rem praesentium alias et voluptates officia sed molestiae sint et 
+                  voluptas quos. Qui harum repudiandae galisum dolorem</p>
+                <ul>
+                  <li>5 Star Accommodation</li>
+                  <li>Breakfast</li>
+                  <li>5 Star Accommodation</li>
+                  <li>Breakfast</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-serial">
+                <div class="step-number">02</div>
+              </div>
+              <div class="step-info">
+                <h2>Day 2: Visiting Zurich, Geneva And Zermatt</h2>
+                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet.</p>
+                <ul>
+                  <li>5 Star Accommodation</li>
+                  <li>Breakfast</li>
+                  <li>5 Star Accommodation</li>
+                  <li>Breakfast</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-serial">
+                <div class="step-number">03</div>
+              </div>
+              <div class="step-info">
+                <h2>Day 3: Rest</h2>
+                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet.</p>
+                <ul>
+                  <li>5 Star Accommodation</li>
+                  <li>Breakfast</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-serial">
+                <div class="step-number">04</div>
+              </div>
+              <div class="step-info">
+                <h2>Day 4: Historical Tour</h2>
+                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet.</p>
+                <ul>
+                  <li>5 Star Accommodation</li>
+                  <li>Breakfast</li>
+                  <li>5 Star Accommodation</li>
+                  <li>Breakfast</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step2">
+              <div>
+                <div class="step-number">05</div>
+              </div>
+              <div class="step-info">
+                <h2>Day 5: Return</h2>
+                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
+                  venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tour Plan Page End -->
+        <!-- Booking Section Start -->
+        <div class="main-content-book">
           <div class="main-content-form">
             <div class="form-head">
               <h1>Book This Tour</h1>
@@ -299,6 +382,7 @@
             <img src="images/location/tour-location-img001.png" alt="plane" />
           </div>
         </div>
+        <!-- Booking Section End -->
       </div>
     </div>
     <footer>
@@ -357,10 +441,9 @@
           </div>
         </div>
       </div>
-      <hr />
+      <hr class="footer-hr"/>
       <p class="footer-alt">Copyright @ Xpro 2022. All Rights Reserved.</p>
     </footer>
-
     <script src="packages.js"></script>
   </body>
 </html>
