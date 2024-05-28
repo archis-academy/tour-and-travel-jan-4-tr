@@ -1,3 +1,4 @@
+// Packages Page Tab Section
 const navbarPackages = document.getElementsByClassName("nav-button")
 const pageContent = document.getElementsByClassName("page-content")
 
@@ -9,13 +10,6 @@ function showContent(pageId) {
       pageContent[i].style.display = "none";
     }
   }
-}
-
-for (let i = 0; i < navbarPackages.length; i++) {
-  navbarPackages[i].addEventListener("click", function() {
-    const pageId = this.getAttribute("data-page");
-    showContent(pageId);
-  });
 }
 
 function addClass(active) {
@@ -30,6 +24,8 @@ function addClass(active) {
 
 for (let i = 0; i < navbarPackages.length; i++) {
   navbarPackages[i].addEventListener("click", function() {
+    const pageId = this.getAttribute("data-page");
+    showContent(pageId);
     addClass(this);
   });
 }
@@ -38,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("default-open").click();
 });
 
+// Main Navigation Section
 const navbarMenu = document.querySelector("#section-nav");
 
 let isOpen = open;

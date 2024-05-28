@@ -638,6 +638,10 @@ footer {
     flex-wrap: wrap;
     min-height: fit-content;
   }
+  .step2 {
+    flex-wrap: wrap;
+    min-height: fit-content;
+  }
   .step-info {
     padding: 0;
   }
