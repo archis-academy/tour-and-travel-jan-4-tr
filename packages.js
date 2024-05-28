@@ -30,8 +30,7 @@ function addClass(active) {
 
 for (let i = 0; i < navbarPackages.length; i++) {
   navbarPackages[i].addEventListener("click", function() {
-    const active = this.classList.contains("active-btn");
-    addClass(active);
+    addClass(this);
   });
 }
 
