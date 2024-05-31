@@ -66,7 +66,7 @@
     <div class="packages-main-content">
       <!-- Nav Section Start -->
       <div class="main-content-nav">
-        <button class="info-nav-btn nav-button" data-page="Information" id="default-open">
+        <button  class="info-nav-btn nav-button" onclick="openPage(this, 'white')" id="default-open" data-page="Information">
           <img src="images/location/location-info-logo.png" />
           Information
         </button>
@@ -292,6 +292,42 @@
           </div>
         </div>
         <!-- Tour Plan Page End -->
+
+        <!--trip-image-gallery-start-->
+        <div class="trip-image-gallery-body hidden page-content" id="Gallery">
+          <div class="trip-image-gallery-container">
+  
+              <div class="gallery-item">
+                  <img src="images/packages/Rectangle 19321.png" alt="picture1">
+              </div>
+  
+              <div class="gallery-item tall">
+                  <img src="images/packages/Rectangle 19321-6.png" alt="picture2">
+              </div>
+  
+              <div class="gallery-item">
+                  <img src="images/packages/Rectangle 19321-1.png" alt="picture3">
+              </div>
+  
+              <div class="gallery-item">
+                  <img src="images/packages/Rectangle 19321-2.png" alt="picture4">
+              </div>
+  
+              <div class="gallery-item large">
+                  <img src="images/packages/Rectangle 19321-4.png" alt="picture5" class="picture5">
+              </div>
+  
+              <div class="gallery-item">
+                  <img src="images/packages/Rectangle 19321-3.png" alt="picture6">
+              </div>
+  
+              <div class="gallery-item wide">
+                  <img src="images/packages/Rectangle 19321-5.png" alt="picture7">
+              </div>
+          </div>
+      </div>
+      <!--trip-image-gallery-end-->
+
         <!-- Booking Section Start -->
         <div class="main-content-book">
           <div class="main-content-form">
@@ -362,7 +398,7 @@
                   "
                   placeholder="Number of Ticket"
                   required
-                />
+                  />
                 <textarea
                   type="text"
                   id="message"
