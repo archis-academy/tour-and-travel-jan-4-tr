@@ -1,17 +1,39 @@
-function openPage(elmnt, color) {
-  var infoNavBtn, i;
+const navbarPackages = document.getElementsByClassName("nav-button");
+const pageContent = document.getElementsByClassName("page-content");
 
-  // Remove active class from all buttons
-  infoNavBtn = document.getElementsByClassName("info-nav-btn");
-  for (i = 0; i < infoNavBtn.length; i++) {
-    infoNavBtn[i].style.backgroundColor = "";
+function showContent(pageId) {
+  for (let i = 0; i < pageContent.length; i++) {
+    if (pageContent[i].id === pageId) {
+      pageContent[i].style.display = "block";
+    } else {
+      pageContent[i].style.display = "none";
+    }
   }
-
-  // Set background color of the clicked button
-  elmnt.style.backgroundColor = color;
 }
 
-// Click the default button when the page loads
+for (let i = 0; i < navbarPackages.length; i++) {
+  navbarPackages[i].addEventListener("click", function () {
+    const pageId = this.getAttribute("data-page");
+    showContent(pageId);
+  });
+}
+
+function addClass(active) {
+  for (let i = 0; i < navbarPackages.length; i++) {
+    if (navbarPackages[i] === active) {
+      navbarPackages[i].classList.add("active-btn");
+    } else {
+      navbarPackages[i].classList.remove("active-btn");
+    }
+  }
+}
+
+for (let i = 0; i < navbarPackages.length; i++) {
+  navbarPackages[i].addEventListener("click", function () {
+    addClass(this);
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("default-open").click();
 });
@@ -50,7 +72,3 @@ function handleResize() {
 
 window.addEventListener("resize", handleResize);
 handleResize();
-
-function redirectToPage() {
-  window.location.href = "location.html";
-}
