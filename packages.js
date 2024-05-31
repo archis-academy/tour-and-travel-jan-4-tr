@@ -1,6 +1,6 @@
 // Packages Page Tab Section
-const navbarPackages = document.getElementsByClassName("nav-button")
-const pageContent = document.getElementsByClassName("page-content")
+const navbarPackages = document.getElementsByClassName("nav-button");
+const pageContent = document.getElementsByClassName("page-content");
 
 function showContent(pageId) {
   for (let i = 0; i < pageContent.length; i++) {
@@ -23,14 +23,14 @@ function addClass(active) {
 }
 
 for (let i = 0; i < navbarPackages.length; i++) {
-  navbarPackages[i].addEventListener("click", function() {
+  navbarPackages[i].addEventListener("click", function () {
     const pageId = this.getAttribute("data-page");
     showContent(pageId);
     addClass(this);
   });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("default-open").click();
 });
 
