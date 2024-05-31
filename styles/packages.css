@@ -77,13 +77,16 @@
 .info-nav-btn:hover {
   background-color: #d3d3d3;
 }
+
+.active-btn {
+  background-color: #ffffff;
+}
 /* Nav Section End */
 
 .main-content-body {
   max-width: 1328px;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 /* Information Page Start */
@@ -370,20 +373,24 @@ p {
 }
 /* Tour Plan Page End */
 
+/* Location Page Start */
 .location-box {
   max-width: 780px;
   padding: 35px 28px;
 }
+
 .location-box-h3 {
   color: #181e4b;
   font-family: "Volkhov", sans-serif;
   font-size: 32px;
   font-weight: 700;
 }
+
 #embed-map-display img.text-marker {
   max-width: none !important;
   background: none !important;
 }
+
 .location-box-p {
   color: #181e4b;
   font-size: 16px;
@@ -398,34 +405,54 @@ p {
   width: 710px;
   height: 700px;
 }
-@media (max-width: 750px) {
-  .location-gps {
-    width: 650px;
-  }
-}
-@media (max-width: 700px) {
-  .location-hero-h1 {
-    font-size: 100px;
-    line-height: 150px;
-  }
-  .location-gps {
-    width: 400px;
-    height: 600px;
-  }
-}
-@media (max-width: 450px) {
-  .location-gps {
-    width: 100%;
-    height: 300px;
-  }
-  .location-box {
-    padding: 35px 5px;
-  }
+/* Location Page End */
+
+/* Gallery Page Start */
+.trip-image-gallery-body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  flex: 1;
 }
 
-.active-btn {
-  background-color: #ffffff;
+.trip-image-gallery-container {
+  display: grid;
+  gap: 20px;
+  width: 90%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  max-width: 1000px;
+  margin: 50px auto;
 }
+
+.gallery-item img {
+width: 100%;
+height: 100%;
+display: block;
+object-fit: cover; 
+}
+
+.tall {
+grid-row: span 3;
+grid-column: span 2;
+}
+
+.large {
+grid-column: span 2;
+grid-row: span 1;
+}
+
+.wide {
+grid-column: span 3;
+}
+
+.hidden {
+display: none;
+}
+/* Gallery Page End */
 
 /* Booking Section Start */
 .main-content-book {
@@ -704,6 +731,23 @@ footer {
   }
 }
 
+@media screen and (max-width: 750px) {
+  .location-gps {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .location-hero-h1 {
+    font-size: 100px;
+    line-height: 150px;
+  }
+  .location-gps {
+    width: 400px;
+    height: 600px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .gallery-body {
     grid-template-columns: repeat(auto-fit, 120px);
@@ -711,53 +755,12 @@ footer {
   }
 }
 
-
-.trip-image-gallery-body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 1);
-    flex: 1;
-
-}
-
-.trip-image-gallery-container{
-    display: grid;
-    gap: 20px;
-    width: 90%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 250px;
-    max-width: 1000px;
-    margin: 50px auto;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover; 
-}
-
-
-.tall {
-  grid-row: span 3;
-  grid-column:span 2;
-}
-
-.large {
-  grid-column: span 2;
-  grid-row: span 1;
- 
-}
-
-
-.wide {
-  grid-column: span 3;
-  
-}
-
-.hidden{
-  display: none;
+@media screen and (max-width: 450px) {
+  .location-gps {
+    width: 100%;
+    height: 300px;
+  }
+  .location-box {
+    padding: 35px 5px;
+  }
 }
