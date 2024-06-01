@@ -393,6 +393,72 @@
 /* Banner Section End */
 
 /* Sightseeing Section Start */
+.homepage-sightseeing-container {
+  padding: 150px;
+  display: flex;
+}
+
+.europe-sightseeing-info {
+  max-width: 70%;
+}
+
+.sightseeing-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #df6951;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: clamp(20px, 2vw, 26px);
+}
+
+.sightseeing-title {
+  color: #181e4b;
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: clamp(25px, 4vw, 50px);
+  line-height: clamp(30px, 4vw, 70px);
+}
+
+.europe-sightseeing-info p {
+  padding: 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 4vw, 16px);
+  line-height: clamp(20px, 4vw, 26px);
+}
+
+.europe-sightseeing-btn {
+  border: none;
+  border-radius: 10px;
+  background-color: #df6951;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 15px 20px;
+  cursor: pointer;
+  width: 175px;
+  margin: 5px auto;
+}
+
+.europe-sightseeing-btn:hover {
+  background-color: #b86e14;
+}
+
+.europe-sightseeing-locations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.europe-location img{
+  width: 100%;
+}
+
+.europe-absolute-img img{
+  position: relative;
+  z-index: -1;
+}
 /* Sightseeing Section End */
 
 /* Explore Section Start */
@@ -482,6 +548,7 @@
 
 .tt-title {
   margin-top: 10px;
+  color: #181e4b;
   font-family: "Volkhov", serif;
   font-weight: 700;
   text-align: center;
@@ -764,19 +831,19 @@ footer {
   color: #181433;
 }
 
-@media (max-width: 1420px) {
+@media screen and (max-width: 1420px) {
   .tt-countrys {
     flex-wrap: wrap;
   }
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .homepage-hero-section-container {
     position: relative;
   }
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .homepage-explore-section {
     min-height: 400px;
     flex-wrap: wrap;
@@ -785,15 +852,15 @@ footer {
   .explore-section-img {
     min-width: 250px;
   }
-}
-
-@media (max-width: 827px) {
   .hs-submit-input {
     width: 100%;
   }
+  .homepage-sightseeing-container {
+    padding: 100px 10px;
+  }
 }
 
-@media (max-width: 685px) {
+@media screen and (max-width: 650px) {
   .line-img {
     display: none;
   }
@@ -814,15 +881,9 @@ footer {
     margin-bottom: 70px;
     margin-left: 115px;
   }
-}
-
-@media (max-width: 650px) {
   .hs-scroll-img {
     width: 260px;
   }
-}
-
-@media (max-width: 630px) {
   .hs-client-images-section {
     display: flex;
     flex-wrap: wrap;

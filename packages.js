@@ -53,9 +53,6 @@ function toggleBtn() {
 
 function handleResize() {
   const width = window.innerWidth;
-
-  console.log("Window width:", width);
-
   if (width > 1000) {
     navbarMenu.style.display = "flex";
     document.body.style.overflow = "auto";
