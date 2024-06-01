@@ -34,6 +34,7 @@ a {
   cursor: pointer;
   line-height: 21px;
 }
+
 .hero-section-nav-box {
   display: flex;
   justify-content: space-between;
@@ -42,6 +43,7 @@ a {
   align-items: center;
   font-family: "Poppins", sans-serif;
 }
+
 .hero-section-nav {
   display: flex;
   gap: 35px;
@@ -78,6 +80,7 @@ a {
 .hs-nav-dropdown:hover .hs-nav-dropdown-text {
   display: block;
 }
+
 .menu-toggle {
   display: none;
   cursor: pointer;
@@ -147,11 +150,11 @@ a {
     position: static;
     padding-left: 15px;
   }
+  .hs-nav-dropdown-text a {
+    position: static;
+  }
   .hs-nav-dropdown-text li:hover {
     border-bottom: 1px solid #df6951;
     padding-bottom: 2px;
-  }
-  .hs-nav-dropdown-text a {
-    position: static;
   }
 }
