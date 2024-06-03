@@ -451,8 +451,27 @@
   padding: 50px 0;
 }
 
+.europe-location {
+  position: relative;
+}
+
 .europe-location img{
   width: 100%;
+}
+
+.sightseeing-price {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #DF6951;
+  padding: 5px 15px;;
+  border-radius: 15px;
+  z-index: 2;
+  top: 10px;
+  right: 10px;
 }
 
 .europe-absolute-img img{
@@ -875,6 +894,7 @@ footer {
   .europe-sightseeing-locations {
     justify-content: center;
     padding: 20px 0;
+    gap: 10px;
   }
   .europe-sightseeing-btn {
     width: auto;
