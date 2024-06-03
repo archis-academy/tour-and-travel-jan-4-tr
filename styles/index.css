@@ -394,12 +394,12 @@
 
 /* Sightseeing Section Start */
 .homepage-sightseeing-container {
-  padding: 150px;
+  padding: 100px 60px;
   display: flex;
 }
 
 .europe-sightseeing-info {
-  max-width: 70%;
+  max-width: 60%;
 }
 
 .sightseeing-subtitle {
@@ -456,8 +456,9 @@
 }
 
 .europe-absolute-img img{
-  position: relative;
+  position: absolute;
   z-index: -1;
+  right: 50px;
 }
 /* Sightseeing Section End */
 
@@ -835,6 +836,9 @@ footer {
   .tt-countrys {
     flex-wrap: wrap;
   }
+  .europe-absolute-img img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -859,6 +863,23 @@ footer {
     padding: 100px 10px;
   }
 }
+
+@media screen and (max-width: 770px) {
+  .homepage-sightseeing-container {
+    padding: 20px 10px;
+  }
+  .europe-sightseeing-info {
+    max-width: 100%;
+    text-align: center;
+  }
+  .europe-sightseeing-locations {
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .europe-sightseeing-btn {
+    width: auto;
+  }
+} 
 
 @media screen and (max-width: 650px) {
   .line-img {
