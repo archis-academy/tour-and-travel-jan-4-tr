@@ -193,6 +193,12 @@
   gap: 35px;
 }
 
+@media (max-width: 540px) {
+  .bs-services {
+    justify-content: center;
+  }
+}
+
 .orange-box {
   width: 100px;
   height: 100px;
@@ -250,16 +256,16 @@
 }
 
 .bs-main-title {
-  font-family: volkhov;
+  font-family: "Volkhov", serif;
   font-weight: 700;
-  font-size: 35px;
-  line-height: 64.5px;
+  font-size: clamp(24px, 4vw, 35px);
+  line-height: clamp(40px, 4vw, 64.5px);
   text-align: center;
   color: #181e4b;
 }
 
 .service-exp {
-  font-family: poppins;
+  font-family: "Poppins", sans-serif;
   color: rgba(94, 98, 130, 1);
   font-size: 16px;
   font-weight: 500;
@@ -268,9 +274,11 @@
 }
 
 .bs-ct-title {
-  font-family: poppins;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: clamp(20px, 2vw, 27px);
   color: #df6951;
-  size: 18px;
 }
 
 .img-title {
@@ -337,13 +345,19 @@
 .homepage-favorite-resorts-box {
   flex: 1;
   max-width: 1350px;
-  margin: 75px 0 0 0;
+  margin: 75px 0 50px 0px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
   padding: 0 20px;
   justify-content: space-between;
+}
+
+@media (max-width: 1147px) {
+  .homepage-favorite-resorts-box {
+    justify-content: center;
+  }
 }
 
 .homepage-favorite-resorts-title {
@@ -393,9 +407,9 @@
   gap: 30px;
 }
 
-.homepage-favorite-resorts-plane-div {
+/* .homepage-favorite-resorts-plane-div {
   flex-grow: 1;
-}
+} */
 
 .homepage-favorite-resorts-plane-img {
   width: 100%;
@@ -606,7 +620,7 @@ footer {
 }
 
 .homepage-banner-conteiner {
-  background-image: url(/images/liberty-statue-img.png);
+  background-image: url(/images/Rectangle\ 19294.png);
   background-size: cover;
   background-position: bottom;
   background-position-x: 70%;
