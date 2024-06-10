@@ -443,6 +443,94 @@
 .homepage-favorite-resorts-plane-img {
   width: 100%;
 }
+/* Sightseeing Section Start */
+.homepage-sightseeing-container {
+  padding: 100px 60px;
+  display: flex;
+}
+
+.europe-sightseeing-info {
+  max-width: 60%;
+}
+
+.sightseeing-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #df6951;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: clamp(20px, 2vw, 26px);
+}
+
+.sightseeing-title {
+  color: #181e4b;
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: clamp(25px, 4vw, 50px);
+  line-height: clamp(30px, 4vw, 70px);
+}
+
+.europe-sightseeing-info p {
+  padding: 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 4vw, 16px);
+  line-height: clamp(20px, 4vw, 26px);
+}
+
+.europe-sightseeing-btn {
+  border: none;
+  border-radius: 10px;
+  background-color: #df6951;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 15px 20px;
+  cursor: pointer;
+  width: 175px;
+  margin: 5px auto;
+}
+
+.europe-sightseeing-btn:hover {
+  background-color: #b86e14;
+}
+
+.europe-sightseeing-locations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.europe-location {
+  position: relative;
+}
+
+.europe-location img {
+  width: 100%;
+}
+
+.sightseeing-price {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #df6951;
+  padding: 5px 15px;
+  border-radius: 15px;
+  z-index: 2;
+  top: 10px;
+  right: 10px;
+}
+
+.europe-absolute-img img {
+  position: absolute;
+  z-index: -1;
+  right: 50px;
+}
+/* Sightseeing Section End */
 
 /* homepage-explore-section-start */
 
