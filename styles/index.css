@@ -163,20 +163,39 @@
   }
 }
 
-.partners-section {
-  display: flex;
-  width: 100%;
-  height: 200px;
-  background: #f7f7f7;
-}
-
-.partners-logo-img {
+.ps-slide-image {
   height: 50px;
-  margin: auto;
   opacity: 0.4;
-  filter: grayscale(100);
+  padding: 0 55px;
+  filter: alpha(opacity=40);
+  filter: grayscale(100%);
 }
 
+.ps-logo {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+.homepage-partners-section {
+  width: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  height: 100px;
+}
+.homepage-partners-section-container {
+  overflow: hidden;
+  display: flex;
+  max-width: 1350px;
+  margin: auto;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translatex(-100%);
+  }
+}
 .best-services-conteiner {
   text-align: center;
   margin-top: 60px;
@@ -285,58 +304,69 @@
   margin-top: 20px;
 }
 
-.honeymoon-specials-conteiner {
-  margin: 0 auto;
+.homepage-honeymoon-specials {
   display: flex;
   justify-content: center;
+  padding: 50px 0;
 }
 
-.honeymoon-specials-box {
-  flex: 1;
-  max-width: 1404px;
-  margin: 100px 0 0 0;
+.honeymoon-specials-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1350px;
+  flex-wrap: wrap;
+  flex: 1;
 }
-
-.honemoon-subtitle {
-  color: #df6951;
-  font-size: 18px;
+.hs-image-box {
+  max-width: 655px;
+}
+.hs-image {
+  width: 100%;
+}
+.hs-title-box {
+  max-width: 583px;
+}
+.hs-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(12px, 3vw, 16px);
+  font-weight: 700;
   line-height: 27px;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1.8px;
+  letter-spacing: 0.1em;
+  color: rgba(223, 105, 81, 1);
 }
-
-.honeymoon-title {
-  color: #181e4b;
-  font-size: 50px;
-  line-height: 71px;
-  font-weight: 700;
+.hs-title {
   font-family: "Volkhov", serif;
+  font-size: clamp(24px, 5vw, 50px);
+  font-weight: 700;
+  line-height: clamp(40px, 5vw, 72px);
+  color: rgba(24, 30, 75, 1);
 }
-
-.honeymoon-prg {
-  color: black;
-  margin: 20px 0 30px 0;
-  font-size: 16px;
-  line-height: 26px;
+.hs-paragraph {
   font-family: "Poppins", sans-serif;
+  font-size: clamp(8px, 4vw, 16px);
   font-weight: 400;
+  line-height: clamp(12px, 4vw, 26px);
+  color: rgba(0, 0, 0, 1);
 }
-
-.honeymoon-button {
+.hs-button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 15px 25px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(223, 105, 81, 1);
   border-radius: 10px;
-  padding: 15px 22.5px;
-  color: white;
-  background-color: #df6951;
-  font-family: "Poppins", sans-serif;
-  margin-top: 10px;
-  border-style: none;
-  font-weight: 400;
+  border: none;
 }
-
+@media (max-width: 1235px) {
+  .homepage-honeymoon-specials {
+    padding: 0 25px;
+  }
+  .honeymoon-specials-container {
+    justify-content: center;
+    gap: 15px;
+  }
+}
 .homepage-favorite-resorts-conteiner {
   display: flex;
   justify-content: center;
@@ -359,7 +389,6 @@
     justify-content: center;
   }
 }
-
 .homepage-favorite-resorts-title {
   color: #df6951;
   font-size: clamp(15px, 2vw, 18px);
