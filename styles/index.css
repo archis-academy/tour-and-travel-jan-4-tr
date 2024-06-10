@@ -115,39 +115,90 @@
   bottom: 50px;
 }
 
-.partners-section {
-  display: flex;
-  width: 100%;
-  height: 200px;
-  background: #f7f7f7;
+@media (max-width: 1000px) {
+  .homepage-hero-section-container {
+    position: relative;
+  }
+}
+@media (max-width: 685px) {
+  .line-img {
+    display: none;
+  }
+
+  .hs-travel-form {
+    flex-direction: column;
+    align-items: start;
+  }
+  .hs-pageline-img {
+    display: none;
+  }
+  .angle-down-typ {
+    position: absolute;
+    margin-top: 43px;
+    margin-left: 90px;
+  }
+  .angle-down-duration {
+    position: absolute;
+    margin-bottom: 70px;
+    margin-left: 115px;
+  }
 }
 
-.partners-logo-img {
+@media (max-width: 650px) {
+  .hs-scroll-img {
+    width: 260px;
+  }
+}
+
+@media (max-width: 827px) {
+  .hs-submit-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 630px) {
+  .hs-client-images-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.ps-slide-image {
   height: 50px;
-  margin: auto;
   opacity: 0.4;
-  filter: grayscale(100);
+  padding: 0 55px;
+  filter: alpha(opacity=40);
+  filter: grayscale(100%);
 }
 
-/* Best Services Section Start */
-.best-services-container {
+.ps-logo {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+.homepage-partners-section {
+  width: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  height: 100px;
+}
+.homepage-partners-section-container {
+  overflow: hidden;
+  display: flex;
+  max-width: 1350px;
+  margin: auto;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translatex(-100%);
+  }
+}
+.best-services-conteiner {
   text-align: center;
   margin-top: 60px;
-}
-
-.bs-ct-title {
-  font-family: poppins;
-  color: #df6951;
-  size: 18px;
-}
-
-.bs-main-title {
-  font-family: volkhov;
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 64.5px;
-  text-align: center;
-  color: #181e4b;
 }
 
 .bs-services {
@@ -161,29 +212,10 @@
   gap: 35px;
 }
 
-.image-container {
-  position: relative;
-  display: inline-block;
-  justify-content: center;
-}
-
-.special-yellow-box {
-  position: absolute;
-  width: 50px;
-  height: 49px;
-  background-color: rgba(255, 241, 218, 1);
-  bottom: -10px;
-  right: -15px;
-  border-radius: 10px;
-  z-index: -1;
-}
-
-.service-fly {
-  position: relative;
-  border: 1px solid white;
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 36px;
-  box-shadow: 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.1);
+@media (max-width: 540px) {
+  .bs-services {
+    justify-content: center;
+  }
 }
 
 .orange-box {
@@ -200,6 +232,22 @@
 .image-fly-container {
   position: relative;
   display: inline-block;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+}
+
+.special-yellow-box {
+  position: absolute;
+  width: 50px;
+  height: 49px;
+  background-color: rgba(255, 241, 218, 1);
+  bottom: -10px;
+  right: -15px;
+  border-radius: 10px;
+  z-index: -1;
 }
 
 .yellow-box {
@@ -218,76 +266,108 @@
   z-index: 1;
 }
 
-.img-title {
-  margin-top: 20px;
+.service-fly {
+  position: relative;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 36px;
+  box-shadow: 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.bs-main-title {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: clamp(24px, 4vw, 35px);
+  line-height: clamp(40px, 4vw, 64.5px);
+  text-align: center;
+  color: #181e4b;
 }
 
 .service-exp {
-  font-family: poppins;
+  font-family: "Poppins", sans-serif;
   color: rgba(94, 98, 130, 1);
   font-size: 16px;
   font-weight: 500;
   margin-top: 10px;
   padding: 0 30px 30px;
 }
-/* Best Services Section End */
 
-/* Honeymoon Section Start */
-.honeymoon-specials-container {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+.bs-ct-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: clamp(20px, 2vw, 27px);
+  color: #df6951;
 }
 
-.honeymoon-specials-box {
-  flex: 1;
-  max-width: 1404px;
-  margin: 100px 0 0 0;
+.img-title {
+  margin-top: 20px;
+}
+
+.homepage-honeymoon-specials {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.honeymoon-specials-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1350px;
+  flex-wrap: wrap;
+  flex: 1;
 }
-
-.honeymoon-subtitle {
-  color: #df6951;
-  font-size: 18px;
+.hs-image-box {
+  max-width: 655px;
+}
+.hs-image {
+  width: 100%;
+}
+.hs-title-box {
+  max-width: 583px;
+}
+.hs-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(12px, 3vw, 16px);
+  font-weight: 700;
   line-height: 27px;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1.8px;
+  letter-spacing: 0.1em;
+  color: rgba(223, 105, 81, 1);
 }
-
-.honeymoon-title {
-  color: #181e4b;
-  font-size: 50px;
-  line-height: 71px;
-  font-weight: 700;
+.hs-title {
   font-family: "Volkhov", serif;
+  font-size: clamp(24px, 5vw, 50px);
+  font-weight: 700;
+  line-height: clamp(40px, 5vw, 72px);
+  color: rgba(24, 30, 75, 1);
 }
-
-.honeymoon-prg {
-  color: black;
-  margin: 20px 0 30px 0;
-  font-size: 16px;
-  line-height: 26px;
+.hs-paragraph {
   font-family: "Poppins", sans-serif;
+  font-size: clamp(8px, 4vw, 16px);
   font-weight: 400;
+  line-height: clamp(12px, 4vw, 26px);
+  color: rgba(0, 0, 0, 1);
 }
-
-.honeymoon-button {
+.hs-button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 15px 25px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(223, 105, 81, 1);
   border-radius: 10px;
-  padding: 15px 22.5px;
-  color: white;
-  background-color: #df6951;
-  font-family: "Poppins", sans-serif;
-  margin-top: 10px;
-  border-style: none;
-  font-weight: 400;
+  border: none;
 }
-/* Honeymoon Section End */
-
-/* Favorite Resorts Section Start */
-.homepage-favorite-resorts-container {
+@media (max-width: 1235px) {
+  .homepage-honeymoon-specials {
+    padding: 0 25px;
+  }
+  .honeymoon-specials-container {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+.homepage-favorite-resorts-conteiner {
   display: flex;
   justify-content: center;
 }
@@ -295,7 +375,7 @@
 .homepage-favorite-resorts-box {
   flex: 1;
   max-width: 1350px;
-  margin: 75px 0 0 0;
+  margin: 75px 0 50px 0px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -304,6 +384,11 @@
   justify-content: space-between;
 }
 
+@media (max-width: 1147px) {
+  .homepage-favorite-resorts-box {
+    justify-content: center;
+  }
+}
 .homepage-favorite-resorts-title {
   color: #df6951;
   font-size: clamp(15px, 2vw, 18px);
@@ -313,20 +398,13 @@
   letter-spacing: 1.8px;
 }
 
-.homepage-favorite-resorts-subtitle {
+.homepage-favorite-resorts-subtit {
   max-width: 640px;
   color: #181e4b;
   font-size: clamp(30px, 4vw, 50px);
   line-height: clamp(45px, 4vw, 71px);
   font-weight: 700;
   font-family: "Volkhov", serif;
-}
-
-.homepage-favorite-resorts-value {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 .homepage-favorite-resorts-context {
@@ -351,47 +429,20 @@
   font-family: "Poppins", sans-serif;
 }
 
-.homepage-favorite-resorts-plane-div {
-  flex-grow: 1;
+.homepage-favorite-resorts-value {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
+
+/* .homepage-favorite-resorts-plane-div {
+  flex-grow: 1;
+} */
 
 .homepage-favorite-resorts-plane-img {
   width: 100%;
 }
-/* Favorite Resorts Section End */
-
-/* Banner Section Start */
-.homepage-banner-container {
-  background-image: url(/images/liberty-statue-img.png);
-  background-size: cover;
-  background-position: bottom;
-  background-position-x: 70%;
-  height: 399px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.homepage-banner {
-  max-width: 1350px;
-  margin: 0 auto;
-  flex: 1;
-  color: white;
-  font-size: clamp(24px, 4vw, 40px);
-  font-weight: 700;
-  line-height: clamp(40px, 4vw, 70px);
-  font-family: "volkhov", serif;
-  padding: 0 20px;
-}
-
-.homepage-banner-img-div {
-  max-width: 700px;
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px 0;
-}
-/* Banner Section End */
-
 /* Sightseeing Section Start */
 .homepage-sightseeing-container {
   padding: 100px 60px;
@@ -455,7 +506,7 @@
   position: relative;
 }
 
-.europe-location img{
+.europe-location img {
   width: 100%;
 }
 
@@ -466,33 +517,31 @@
   line-height: 24px;
   font-weight: 300;
   color: #fff;
-  background-color: #DF6951;
-  padding: 5px 15px;;
+  background-color: #df6951;
+  padding: 5px 15px;
   border-radius: 15px;
   z-index: 2;
   top: 10px;
   right: 10px;
 }
 
-.europe-absolute-img img{
+.europe-absolute-img img {
   position: absolute;
   z-index: -1;
   right: 50px;
 }
 /* Sightseeing Section End */
 
-/* Explore Section Start */
+/* homepage-explore-section-start */
+
 .homepage-explore-section {
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
-.explore-section-textbox {
+.explore-section-box {
   position: relative;
-  text-align: center;
-  display: flex;
-  flex: 1;
 }
 
 .explore-section-img {
@@ -500,6 +549,13 @@
   min-width: 300px;
   height: 400px;
   object-fit: cover;
+}
+
+.explore-section-textbox {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex: 1;
 }
 
 .explore-section-caption {
@@ -536,7 +592,7 @@
   right: 0px;
 }
 
-.explore-section-button {
+.explore-section-buton {
   border-radius: 8px;
   padding: 10px 15px;
   margin-top: 25px;
@@ -545,189 +601,18 @@
   background: transparent;
   color: white;
 }
-/* Explore Section End */
 
-/* Trending Tour Section Start */
-.homepage-trending-tour-packages {
-  margin-top: 100px;
-  padding: 0 20px;
+@media (max-width: 900px) {
+  .homepage-explore-section {
+    min-height: 400px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .explore-section-img {
+    min-width: 250px;
+  }
 }
-
-.trending-tour-packages-title {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.tt-subtitle {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  color: #df6951;
-  font-size: clamp(15px, 2vw, 18px);
-  line-height: clamp(20px, 2vw, 27px);
-}
-
-.tt-title {
-  margin-top: 10px;
-  color: #181e4b;
-  font-family: "Volkhov", serif;
-  font-weight: 700;
-  text-align: center;
-  font-size: clamp(25px, 4vw, 50px);
-  line-height: clamp(30px, 4vw, 71.04px);
-}
-
-.tt-countrys {
-  margin: 30px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.tt-countrys-details {
-  max-width: 395px;
-}
-
-.tour-images {
-  position: relative;
-}
-
-.tour-img {
-  width: 100%;
-  margin-bottom: 50px;
-}
-
-.country-flag {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100px;
-}
-
-.tour-days-people {
-  display: flex;
-  font-family: "Poppins", sans-serif;
-  font-size: 16.81px;
-  font-weight: 400;
-  line-height: 25.21px;
-  text-align: center;
-  color: #7d7d7d;
-  margin-top: -20px;
-}
-
-.calender-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.stay-days {
-  margin-left: 10px;
-}
-
-.people-icon {
-  margin-left: 50px;
-  width: 20px;
-  height: 20px;
-}
-
-.people-going {
-  margin-left: 10px;
-}
-
-.city-name-rating {
-  display: flex;
-  margin-top: 10px;
-  justify-content: space-between;
-}
-
-.city-name {
-  font-family: "Poppins", sans-serif;
-  font-size: 29.03px;
-  font-weight: 700;
-  line-height: 43.55px;
-  text-align: center;
-}
-
-.star-icon-list {
-  width: 92px;
-  height: 16px;
-  margin-top: 15px;
-  float: right;
-}
-
-.star-icon {
-  float: right;
-  width: 16px;
-  height: 16px;
-  padding: 0.5px 0px 0.5px 0px;
-}
-
-.country-location {
-  display: flex;
-  margin-top: 5px;
-}
-
-.location-icon {
-  width: 27.5px;
-  height: 27.5px;
-}
-
-.country-name {
-  font-family: Poppins;
-  font-size: 16.81px;
-  font-weight: 400;
-  line-height: 25.21px;
-  color: #7d7d7d;
-  margin-left: 10px;
-}
-
-.tour-price {
-  display: flex;
-  margin-top: 5px;
-}
-
-.new-price {
-  font-family: Poppins;
-  font-size: 29.03px;
-  font-weight: 500;
-  line-height: 43.55px;
-  color: #df6951;
-}
-
-.old-price {
-  font-family: Poppins;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 33px;
-  text-decoration: line-through;
-  color: #7d7d7d;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-.tour-info {
-  margin-top: 10px;
-  font-family: "Poppins", sans-serif;
-  font-size: 12.22px;
-  font-weight: 400;
-  line-height: 24.45px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: #000000;
-}
-
-.tour-explore-button {
-  padding: 10px 27.94px;
-  border-radius: 7.64px;
-  background: #df6951;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  margin-top: 10px;
-  border-style: none;
-  font-weight: 400;
-}
-/* Trending Tour Section End */
-
+/* homepage-explore-section-end */
 footer {
   position: relative;
   padding: 0 20px;
@@ -851,82 +736,198 @@ footer {
   color: #181433;
 }
 
-@media screen and (max-width: 1420px) {
+.homepage-banner-conteiner {
+  background-image: url(/images/Rectangle\ 19294.png);
+  background-size: cover;
+  background-position: bottom;
+  background-position-x: 70%;
+  height: 399px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.homepage-banner {
+  max-width: 1350px;
+  margin: 0 auto;
+  flex: 1;
+  color: white;
+  font-size: clamp(24px, 4vw, 40px);
+  font-weight: 700;
+  line-height: clamp(40px, 4vw, 70px);
+  font-family: "volkhov", serif;
+  padding: 0 20px;
+}
+
+.homepage-banner-img-div {
+  max-width: 700px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+
+.homepage-trending-tour-packages {
+  margin-top: 100px;
+  padding: 0 20px;
+}
+.trending-tour-packeges-title {
+  text-align: center;
+  margin: 0 auto;
+}
+.tt-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #df6951;
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: clamp(20px, 2vw, 27px);
+}
+.tt-title {
+  margin-top: 10px;
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: clamp(25px, 4vw, 50px);
+  line-height: clamp(30px, 4vw, 71.04px);
+}
+.tt-countrys {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.tt-countrys-details {
+  max-width: 395px;
+}
+
+.tour-images {
+  position: relative;
+}
+
+.tour-img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.contry-flag {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+}
+
+.tour-days-people {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 16.81px;
+  font-weight: 400;
+  line-height: 25.21px;
+  text-align: center;
+  color: #7d7d7d;
+  margin-top: -20px;
+}
+.calender-icon {
+  width: 24px;
+  height: 24px;
+}
+.stay-days {
+  margin-left: 10px;
+}
+.people-icon {
+  margin-left: 50px;
+  width: 20px;
+  height: 20px;
+}
+.people-going {
+  margin-left: 10px;
+}
+.city-name-rating {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.star-icon-list {
+  width: 92px;
+  height: 16px;
+  margin-top: 15px;
+  float: right;
+}
+
+.star-icon {
+  float: right;
+  width: 16px;
+  height: 16px;
+  padding: 0.5px 0px 0.5px 0px;
+}
+.country-location {
+  display: flex;
+  margin-top: 5px;
+}
+.location-icon {
+  width: 27.5px;
+  height: 27.5px;
+}
+.contry-name {
+  font-family: Poppins;
+  font-size: 16.81px;
+  font-weight: 400;
+  line-height: 25.21px;
+  color: #7d7d7d;
+  margin-left: 10px;
+}
+.tour-price {
+  display: flex;
+  margin-top: 5px;
+}
+.new-price {
+  font-family: Poppins;
+  font-size: 29.03px;
+  font-weight: 500;
+  line-height: 43.55px;
+  color: #df6951;
+}
+.old-price {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  text-decoration: line-through;
+  color: #7d7d7d;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.tour-info {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12.22px;
+  font-weight: 400;
+  line-height: 24.45px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #000000;
+}
+.tour-explore-button {
+  padding: 10px 27.94px;
+  border-radius: 7.64px;
+  background: #df6951;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  border-style: none;
+  font-weight: 400;
+}
+
+.city-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 29.03px;
+  font-weight: 700;
+  line-height: 43.55px;
+  text-align: center;
+}
+
+@media (max-width: 1420px) {
   .tt-countrys {
-    flex-wrap: wrap;
-  }
-  .europe-absolute-img img {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .homepage-hero-section-container {
-    position: relative;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .homepage-explore-section {
-    min-height: 400px;
-    flex-wrap: wrap;
-    height: auto;
-  }
-  .explore-section-img {
-    min-width: 250px;
-  }
-  .hs-submit-input {
-    width: 100%;
-  }
-  .homepage-sightseeing-container {
-    padding: 100px 10px;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .homepage-sightseeing-container {
-    padding: 20px 10px;
-  }
-  .europe-sightseeing-info {
-    max-width: 100%;
-    text-align: center;
-  }
-  .europe-sightseeing-locations {
-    justify-content: center;
-    padding: 20px 0;
-    gap: 10px;
-  }
-  .europe-sightseeing-btn {
-    width: auto;
-  }
-} 
-
-@media screen and (max-width: 650px) {
-  .line-img {
-    display: none;
-  }
-  .hs-travel-form {
-    flex-direction: column;
-    align-items: start;
-  }
-  .hs-pageline-img {
-    display: none;
-  }
-  .angle-down-typ {
-    position: absolute;
-    margin-top: 43px;
-    margin-left: 90px;
-  }
-  .angle-down-duration {
-    position: absolute;
-    margin-bottom: 70px;
-    margin-left: 115px;
-  }
-  .hs-scroll-img {
-    width: 260px;
-  }
-  .hs-client-images-section {
-    display: flex;
     flex-wrap: wrap;
   }
 }
