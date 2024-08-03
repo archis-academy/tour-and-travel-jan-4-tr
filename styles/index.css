@@ -298,6 +298,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 90px;
+}
+
+@media (max-width: 800px) {
+  .honeymoon-specials-box {
+    flex-direction: column;
+  }
+  .honeymoon-img-con {
+    margin-right: 95px;
+  }
 }
 
 .honemoon-subtitle {
@@ -311,8 +321,8 @@
 
 .honeymoon-title {
   color: #181e4b;
-  font-size: 50px;
-  line-height: 71px;
+  font-size: clamp(15px 2vw 50px);
+  line-height: clamp(15px 2vw 71px);
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
@@ -335,6 +345,7 @@
   margin-top: 10px;
   border-style: none;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .homepage-favorite-resorts-conteiner {
@@ -483,6 +494,7 @@
   border: 1px solid rgba(255, 255, 255, 1);
   background: transparent;
   color: white;
+  cursor: pointer;
 }
 
 @media (max-width: 900px) {
@@ -799,6 +811,7 @@ footer {
   margin-top: 10px;
   border-style: none;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .city-name {
@@ -813,4 +826,12 @@ footer {
   .tt-countrys {
     flex-wrap: wrap;
   }
+}
+
+.honeymoon-img-con {
+  flex: 1;
+}
+
+.honeymoon-img {
+  width: 100%;
 }
